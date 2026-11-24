@@ -2,7 +2,9 @@
 
 A case study for the AI Product Ops take-home. For each of 100 apps it records the category, how the app checks who is calling (auth), whether a developer can get keys alone (self-serve or gated), the API surface, whether an MCP exists, and a buildability verdict. Every answer links to the docs page it came from. The research was done by an agent and checked by hand.
 
-**Open `index.html` in a browser.** It is the whole deliverable in one self-contained file.
+**Live case study:** https://doobieshankar.github.io/app-api-research-case-study/
+
+You can also open `index.html` in a browser; it is the whole deliverable in one self-contained file.
 
 ## In plain words
 
