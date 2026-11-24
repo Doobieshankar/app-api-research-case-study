@@ -1,0 +1,5484 @@
+{
+ "label": "pass1",
+ "summary": {
+  "confirmed": 332,
+  "no-evidence": 109,
+  "contradicted": 33,
+  "fetch_failed": [
+   "Binance",
+   "Paygent Connect",
+   "iPayX",
+   "QuickBooks",
+   "Xero",
+   "Ramp",
+   "PitchBook",
+   "Otter AI",
+   "Fathom"
+  ],
+  "needed_browser": [
+   "Twenty",
+   "Podio",
+   "LiveAgent",
+   "Lark (Larksuite)",
+   "Discord",
+   "Aircall",
+   "GoHighLevel",
+   "Gumroad",
+   "Airtable",
+   "Harvest",
+   "Devin"
+  ]
+ },
+ "apps": [
+  {
+   "id": 1,
+   "app": "Salesforce",
+   "pages": [
+    {
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 3871,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Authorization Through External Client Apps or Connected Apps and OAuth 2.0 | Introduction to REST API | REST API Developer Guide | Salesforce Developers"
+    },
+    "auth:JWT": {
+     "status": "confirmed",
+     "evidence": "und access token with the DPoP prefix instead of Bearer . DPoP : A signed DPoP proof JWT for this request. If a request sends a DPoP proof with an access token that isn\u00e2\u0080"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "horization Through External Client Apps or Connected Apps and OAuth 2.0 | Introduction to REST API | REST API Developer Guide | Salesforce Developers"
+    },
+    "api:SOAP": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:GraphQL": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "mmend using external client apps instead. If you must continue creating connected apps, contact Salesforce Support. See New connected apps can no longer be created in Spring \u00e2\u0080\u009826 for more"
+    },
+    "mcp": {
+     "status": "no-evidence",
+     "evidence": null
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "mmend using external client apps instead. If you must continue creating connected apps, contact Salesforce Support. See New connected apps can no longer be created in Spring \u00e2\u0080\u009826 for more",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "salesforce",
+    "hits": [
+     "ai.cirra/salesforce-mcp",
+     "ai.cirra/salesforce-mcp",
+     "ai.cirra/salesforce-mcp",
+     "ai.smithery/kodey-ai-salesforce-mcp",
+     "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+     "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+     "ai.smithery/kodey-ai-salesforce-mcp-server",
+     "cloud.serpent/salesforce-devops"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 2,
+   "app": "HubSpot",
+   "pages": [
+    {
+     "url": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/login?redirect=/apps/legacy-apps/authentication/oauth-quickstart-guide",
+     "via": "failed"
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/getting-started/introduction",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 15629,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Working with OAuth | OAuth Quickstart Guide - HubSpot docs Documentation Index Fetch the complete documentat"
+    },
+    "auth:Private app token": {
+     "status": "confirmed",
+     "evidence": "ers into any HubSpot account from an external app Create a settings page for a public app Private Apps Overview Create webhook subscriptions in a legacy private app Build with projects Authen"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "data. Platform overview Discover the features available on HubSpot\u2019s developer platform. MCP server Install HubSpot\u2019s local development MCP server for AI-assisted coding in your IDE."
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "hubspot",
+    "hits": [
+     "com.edgethirteen.www/hubspot-dbv",
+     "com.pronovahq/pronova-sales-hubspot",
+     "dev.wirecat/hubspot-cli",
+     "dev.wirecat/hubspot-cli",
+     "dev.wirecat/hubspot-cli",
+     "dev.wirecat/hubspot-cli",
+     "dev.wirecat/hubspot-cli",
+     "dev.wirecat/hubspot-cli"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 3,
+   "app": "Pipedrive",
+   "pages": [
+    {
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/marketplace-oauth-api",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 14865,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "e Marketplace App installation flows Developer Hub Registering a public app Registering a private app Updating approved apps Deleting an app Client ID and client secret App approval process T"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "codes and troubleshooting APP FUNCTIONALITIES App sharing: Adding apps to multiple users OAuth 2.0 OAuth 2.0 overview OAuth authorization Scopes and permission explanations State paramet"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "he x-api-token header for all requests, for example: cURL curl --request GET \\ --url \"https://companydomain.pipedrive.com/api/v2/deals\" \\ --header \"x-api-token: 659c9fddb16335e48cc67114694b52074e812e03\" How to fin"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Blog Pipedrive Developer Documentation Authentication Overview Getting started Developer sandbox account Pipedrive API in Postman or Insomnia Creating an app create-pipedrive-app CLI Tut"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ring a private app Updating approved apps Deleting an app Client ID and client secret App approval process Tips on getting your app approved! Pipedrive Developer Partner Agreement App exte",
+   "selfserve_cue": "Blog Pipedrive Developer Documentation Authentication Overview Getting started Developer sandbox account Pipedrive API in Postman or Insomnia Creating an app create-pipedrive-app CLI Tut",
+   "mcp_registry": {
+    "query": "pipedrive",
+    "hits": [
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp",
+     "io.github.Servosity/pipedrive-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "pages": [
+    {
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.attio.com/docs/oauth/authorize",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 29330,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ts Configuring webhooks Working with activities Tutorials Connect an app to Attio through OAuth Attribute types Overview Actor reference Checkbox Currency Date Domain Email address Inte"
+    },
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "ts On this page Back to top Generating access tokens OAuth 2.0 OAuth for unpublished apps API key Using tokens Scopes Token levels Choosing the token level in the OAuth flow Guides Authen"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "K Ask Assistant \u2318 I Search... Navigation Guides Authenticating requests Overview App SDK REST API MCP SQL Share Changelog Developer console Support Introduction Overview Guides Authen"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "sistant \u2318 I Search... Navigation Guides Authenticating requests Overview App SDK REST API MCP SQL Share Changelog Developer console Support Introduction Overview Guides Authenticating"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "attio",
+    "hits": [
+     "ai.smithery/kaszek-kaszek-attio-mcp",
+     "ai.smithery/kesslerio-attio-mcp-server",
+     "ai.smithery/kesslerio-attio-mcp-server",
+     "ai.smithery/kesslerio-attio-mcp-server",
+     "ai.smithery/kesslerio-attio-mcp-server",
+     "ai.smithery/kesslerio-attio-mcp-server-beta",
+     "dev.wirecat/attio-cli",
+     "dev.wirecat/attio-cli"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 5,
+   "app": "Twenty",
+   "pages": [
+    {
+     "url": "https://twenty.com/developers",
+     "via": "http"
+    },
+    {
+     "url": "https://twenty.com/getting-started/introduction",
+     "via": "browser"
+    },
+    {
+     "url": "https://twenty.com/developers/extend/oauth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 9163,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "p in a dashboard. When to Use OAuth Scenario Auth Method Internal scripts, automation API Key External app acting on behalf of a user OAuth \u2014 Authorization Code Server-to-server, no u"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "s Apps Getting Started Tutorial Config Data Logic Layout Operations API Overview Webhooks OAuth Self-Host Docker Compose Setup Securing your instance Upgrade guide Troubleshooting Contr"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ents as TypeScript apps, from quick start to publishing. API Read and write records over REST and GraphQL, get webhooks when records change, and connect apps with OAuth. Self-Host Ru"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "ypeScript apps, from quick start to publishing. API Read and write records over REST and GraphQL, get webhooks when records change, and connect apps with OAuth. Self-Host Run Twenty on"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "twenty",
+    "hits": [
+     "com.twentyclubs.mcp/premier-league",
+     "io.github.21-million-wall/twentyone-million",
+     "io.github.h3692/eightytwenty",
+     "io.usefulapi/twenty",
+     "io.usefulapi/twenty",
+     "io.usefulapi/twenty",
+     "io.usefulapi/twenty",
+     "io.usefulapi/twenty"
+    ],
+    "vendor_hit": "com.twentyclubs.mcp/premier-league"
+   }
+  },
+  {
+   "id": 6,
+   "app": "Podio",
+   "pages": [
+    {
+     "url": "https://developers.podio.com/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.podio.com/api-key",
+     "via": "browser"
+    },
+    {
+     "url": "https://developers.podio.com/authentication/scopes",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 12191,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Terms of Use How to authenticate with Podio API The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "podio",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "pages": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v7/oauth-overview.html",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 2698,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "OAuth 2.0 Authentication | Zoho CRM API | V7 OAuth 2.0 for V7 APIs- An Overview The Zoho"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.princezoho/tangylimes"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "zoho",
+    "hits": [
+     "com.devart/mcp-zohocrm",
+     "com.devart/mcp-zohodesk",
+     "io.github.asklokesh/zoho-crm-mcp-server",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm"
+    ],
+    "vendor_hit": "io.github.princezoho/tangylimes"
+   }
+  },
+  {
+   "id": 8,
+   "app": "Close",
+   "pages": [
+    {
+     "url": "https://developer.close.com/topics/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.close.com/api/overview/api-key-authentication.md",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.close.com/api/overview/oauth-authentication",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 32034,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Authentication with API keys | Close | Developer API Documentation For AI agents: a documentation index is available a"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "egrations that are internal to your organization. Alternatively, see Authentication with OAuth instead. Getting an API key API keys can be created and managed in your Close accoun"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "password is always empty. cURL example Example cURL request with an api key. curl https://api.close.com/api/v1/me/ -u yourapikey: Notice the \u2019:\u2019 at the end of the api key. This is used because"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "or the markdown version of any page. Search / Ask AI Homepage Product Help Log in Try for Free Developers Home API Reference MCP Skip to navigation On this page Getting an API key Perform API ca"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.salescloser/salescloser"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "or the markdown version of any page. Search / Ask AI Homepage Product Help Log in Try for Free Developers Home API Reference MCP Skip to navigation On this page Getting an API key Perform API ca",
+   "mcp_registry": {
+    "query": "close",
+    "hits": [
+     "ai.salescloser/salescloser",
+     "city.close/close-api",
+     "city.close/close-api",
+     "city.close/close-api",
+     "city.close/close-api",
+     "com.atlasclose/demo",
+     "com.atlasclose/demo",
+     "com.close/close-mcp"
+    ],
+    "vendor_hit": "ai.salescloser/salescloser"
+   }
+  },
+  {
+   "id": 9,
+   "app": "Copper",
+   "pages": [
+    {
+     "url": "https://developer.copper.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.copper.com/introduction/oauth/index.html",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 38830,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Overview Table of contents API Keys OAuth2.0"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ication Overview OAuth2.0 OAuth2.0"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "integrations we provide out of the box. The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources. We are continuou"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.github.copperline-labs/rendex-mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "copper",
+    "hits": [
+     "dev.cotlet/copper-crm",
+     "dev.cotlet/copper-crm",
+     "dev.cotlet/copper-crm",
+     "io.github.copperline-labs/rendex-mcp",
+     "io.github.copperline-labs/rendex-mcp",
+     "io.github.copperline-labs/rendex-mcp",
+     "io.github.copperline-labs/rendex-mcp",
+     "io.github.copperline-labs/rendex-mcp"
+    ],
+    "vendor_hit": "io.github.copperline-labs/rendex-mcp"
+   }
+  },
+  {
+   "id": 10,
+   "app": "DealCloud",
+   "pages": [
+    {
+     "url": "https://api.docs.dealcloud.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "via": "http"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 19523,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "I Reference Authorization Token Light \u00a9 2026 Integration Appliance, Inc. Requesting an OAuth2 Bearer Token - DealCloud API Docs Feedback Feedback (opens in a new tab) API Reference G"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "I Reference Data Models Constants Utilities & helpers Exceptions Changelog License Intapp REST Client Getting Started Getting Started Installation Quick Start Configuration Configurati"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "ationship Intelligence POST Emails POST Meetings GET Status GET Settings Schema Contracts MCP Getting Started AI Clients Authentication Available Tools Custom MCP Servers SDKs Python"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "dealcloud",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 11,
+   "app": "Zendesk",
+   "pages": [
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/authentication/oauth-vs-api-tokens/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 18010,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Data types Pagination Working with AI tools Change policy Undocumented APIs On this page OAuth access token Global OAuth access token API token (deprecated) SSL requirements End user a"
+    },
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "types Pagination Working with AI tools Change policy Undocumented APIs On this page OAuth access token Global OAuth access token API token (deprecated) SSL requirements End user authentication"
+    },
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "ate API requests. Note: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved s"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "If you use curl to test different endpoints, you can use the following format: curl https://obscura.zendesk.com/api/v2/users.json \\ -H \"Authorization: Bearer gErypPlm4dOVgGRvA1ZzMH5MQ3nLo8bo\" Access"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "ed scopes for global clients . To request a sponsored developer account, see Getting a trial or sponsored account for development . Done! You'll receive an email and a ticket r"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ns. Does this global OAuth client work with Zendesk Sell? No, these instructions only apply for Zendesk Support and Chat (Agent Workspace enabled) accounts. For Zendesk Sell, you will n",
+   "selfserve_cue": "ed scopes for global clients . To request a sponsored developer account, see Getting a trial or sponsored account for development . Done! You'll receive an email and a ticket r",
+   "mcp_registry": {
+    "query": "zendesk",
+    "hits": [
+     "com.swifteq/zendesk-mcp-server",
+     "dev.cotlet/zendesk",
+     "dev.cotlet/zendesk",
+     "dev.cotlet/zendesk",
+     "io.github.fruggr/zendesk-mcp-server",
+     "io.github.fruggr/zendesk-mcp-server",
+     "io.github.fruggr/zendesk-mcp-server",
+     "io.github.fruggr/zendesk-mcp-server"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 12,
+   "app": "Intercom",
+   "pages": [
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started/build-an-app-for-your-messenger",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 26059,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Authentication Authentication Copy To"
+    },
+    "auth:Access token": {
+     "status": "confirmed",
+     "evidence": "ata (for example, through an integration you've built) You currently ask people for their API Keys to request resources on their behalf You want to make it easier for your customers to sha"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "s Tickets Help Center Reporting Using the APIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Publ"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "intercom",
+    "hits": [
+     "io.github.MuhammadTalhaMT/intercom",
+     "io.github.MuhammadTalhaMT/intercom",
+     "io.github.iambashar/agent-intercom",
+     "io.github.iambashar/agent-intercom",
+     "io.github.pipeworx-io/intercom",
+     "io.github.pipeworx-io/intercom",
+     "io.github.pipeworx-io/intercom",
+     "io.github.pipeworx-io/intercom"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 13,
+   "app": "Freshdesk",
+   "pages": [
+    {
+     "url": "https://developers.freshdesk.com/api/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 796985,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "v2/agents/[id] Delete a Service Account /api/v2/agents/[id] List API Keys /api/v2/agents/[id]/api_keys Create an API Key /api/v2/agents/[id]/api_k"
+    },
+    "auth:Basic": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "with businesses. Freshdesk's APIs belong to the Representational State Transfer (REST) category. They allow you to perform 'RESTful' operations such as reading, modifying, ad"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "e of factors such as the number of agents or IP addresses used to make the calls. For all trial users, there is a default API limit of 50 calls/minute. If your account hasn't been"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": "its are set at 1,000 calls per minute for the Pro plan and 2,000 calls per minute for the Enterprise plan. To comply with WhatsApp's policies, these outbound messages must use structured tem",
+   "selfserve_cue": "e of factors such as the number of agents or IP addresses used to make the calls. For all trial users, there is a default API limit of 50 calls/minute. If your account hasn't been",
+   "mcp_registry": {
+    "query": "freshdesk",
+    "hits": [
+     "io.github.WYRE-AI/freshdesk-mcp",
+     "io.github.WYRE-AI/freshdesk-mcp",
+     "io.github.WYRE-AI/freshdesk-mcp",
+     "io.github.mindstone/mcp-server-freshdesk",
+     "io.github.mindstone/mcp-server-freshdesk",
+     "io.github.mindstone/mcp-server-freshdesk",
+     "io.github.mrfentmen/freshdesk-mcp",
+     "io.github.pipeworx-io/freshdesk"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "pages": [
+    {
+     "url": "https://dev.frontapp.com/docs/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://dev.frontapp.com/docs/core-api-getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://dev.frontapp.com/docs/oauth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 29805,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ur Developer Community Core API Overview Getting Started with the Core API Authentication OAuth API tokens Fundamentals API Terminology 101 Base URL Rate limits Pagination Search Query"
+    },
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "eloper Community Core API Overview Getting Started with the Core API Authentication OAuth API tokens Fundamentals API Terminology 101 Base URL Rate limits Pagination Search Query object 'q'"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "OAuth service. Otherwise, authentication will be Bearer authentication as stated in the rest of these docs. \ud83d\udcd8 \ud83d\udca1 Basic Authentication The Basic Authentication string is your client"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ecation Policy Application Triggers Core API Reference Tools Sample Applications Front AI MCP Server Admin MCP Server AI agents Plugins Overview Getting Started with the Plugin SDK Fu"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "front",
+    "hits": [
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront",
+     "ai.clize/storefront"
+    ],
+    "vendor_hit": "ai.frontierdesk/desk"
+   }
+  },
+  {
+   "id": 15,
+   "app": "Pylon",
+   "pages": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/getting-started/publish-your-docs",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/getting-started/setup",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 10876,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "age Developer API Authentication How to authenticate with Pylon's API The Pylon API uses Bearer authentication. This means you\u2019ll need to pass your API token in the header of your requ"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "y appending .md to page URLs. Skip to content \u2318 Ctrl k Knowledge Base Website Changelog Book a Demo Login More Getting Started Introduction Quick Start Setup Channel Configuration User Guid"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.pylonseo/pylon-seo"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "y appending .md to page URLs. Skip to content \u2318 Ctrl k Knowledge Base Website Changelog Book a Demo Login More Getting Started Introduction Quick Start Setup Channel Configuration User Guid",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "pylon",
+    "hits": [
+     "io.github.JustinBeckwith/pylon-mcp",
+     "io.github.JustinBeckwith/pylon-mcp",
+     "io.github.JustinBeckwith/pylon-mcp",
+     "io.pylonseo/pylon-seo"
+    ],
+    "vendor_hit": "io.pylonseo/pylon-seo"
+   }
+  },
+  {
+   "id": 16,
+   "app": "LiveAgent",
+   "pages": [
+    {
+     "url": "https://www.liveagent.com/api/",
+     "via": "browser"
+    },
+    {
+     "url": "https://www.liveagent.com/pricing/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 37272,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "\u00e2\u0080\u0094 Not included 2 5 Unlimited Create custom roles with specific permissions for agents. API keys 1 5 10 Unlimited Let third-party apps retrieve and push data and manage tickets from outs"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Singapore, you choose Free help moving your tickets and history with any paid plan 30-day free trial, no credit card AI AI in LiveAgent AI that answers customers and drafts replies, insi"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "AT surveys SLA rules and custom roles Business Per agent \u00c2\u00b7 any team size More AI agents, MCP and control Black Friday 40% off Offer price $29 .40 $29.40 $39 .53 $39.53 Regul"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "atislava, since 2004 Affiliate program Earn by recommending LiveAgent Log in Free trial Book a demo 30 days free, no credit card Log in / Chat with us Chat Free trial Book a demo",
+   "selfserve_cue": "Singapore, you choose Free help moving your tickets and history with any paid plan 30-day free trial, no credit card AI AI in LiveAgent AI that answers customers and drafts replies, insi",
+   "mcp_registry": {
+    "query": "liveagent",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 17,
+   "app": "Plain",
+   "pages": [
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/oauth",
+     "via": "http"
+    },
+    {
+     "url": "https://www.plain.com/docs/product/channels/chat-authentication",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 19675,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "IP Addresses Changelog Changelog GraphQL API Authentication Create a machine user and an API key, and scope it with fine-grained permissions. A machine user can have several API keys, so"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "home page Search... \u2318 K Ask Assistant \u2318 I Help Center Changelog Blog Search... Navigation GraphQL API Authentication Documentation Developer API Reference GraphQL API Introduction Authent"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.plainvoice/mcp"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "plain",
+    "hits": [
+     "ai.livecore/voiceover-tts-dubbing-translate-lip-sync-audio-music-sfx-silence-ffmpeg-remotion-capcut-descript-opus-premiere-after-effects-ugc-faceless-explainer-promo-montage-thumbnail-watermark-blur",
+     "ai.plainvoice/mcp",
+     "ai.smithery/plainyogurt21-clintrials-mcp",
+     "ai.smithery/plainyogurt21-sec-edgar-mcp",
+     "app.vercel.automaton-tx-explainer/base-tools",
+     "app.vercel.automaton-tx-explainer/base-tools",
+     "app.vercel.automaton-tx-explainer/base-tools",
+     "com.autosecurelogin/colorado-complaint-access"
+    ],
+    "vendor_hit": "ai.plainvoice/mcp"
+   }
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "pages": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 9327,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Authentication This is an HTTPS-only API and it uses OAuth 2.0 authorization , implementing Authorization Code and Client Credential flows. All reques"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "tion header: curl -H \"Authorization: Bearer f4f4994a875f461ca4d4708b9e027df4\" \\ https://api.helpscout.net/v2/users/me The Authorization Code flow is typically used for integrations to be used by"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "help",
+    "hits": [
+     "ai.helpwell/helpwell",
+     "ai.helpwell/helpwell",
+     "ai.helpwell/helpwell",
+     "ai.inbrix/helpdesk",
+     "br.com.ihelpu.seminovos/marketplace",
+     "chat.conecto/help-desk",
+     "com.agenthelpnetwork/agent-help-network",
+     "com.agenthelpnetwork/agent-help-network"
+    ],
+    "vendor_hit": "ai.helpwell/helpwell"
+   }
+  },
+  {
+   "id": 19,
+   "app": "Gorgias",
+   "pages": [
+    {
+     "url": "https://developers.gorgias.com/reference/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.gorgias.com/docs/set-up-oauth2-app-store",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 13671,
+   "checks": {
+    "auth:Basic": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "PI supports two authentication methods: \ud83d\udd10 Private app \u2192 API key \ud83d\udc65 Public app \u2192 OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perfor"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "on Gorgias API Introduction Authentication Requests Errors Pagination Rate Limits Gorgias REST API Account The Account object Retrieve your account get List settings get Create a setti"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "verview Building a high-quality Gorgias app 1. Register on Developer Portal & Get Gorgias Sandbox Account 2. Create a Draft App submission form 3. Set up OAuth2 4. Build and test your app"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": "verview Building a high-quality Gorgias app 1. Register on Developer Portal & Get Gorgias Sandbox Account 2. Create a Draft App submission form 3. Set up OAuth2 4. Build and test your app",
+   "mcp_registry": {
+    "query": "gorgias",
+    "hits": [
+     "dev.cotlet/gorgias",
+     "dev.cotlet/gorgias",
+     "dev.cotlet/gorgias"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 20,
+   "app": "Gladly",
+   "pages": [
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 160023,
+   "checks": {
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "ons/scripts with the new token. Authentication BasicAuth Gladly API uses token-based Basic Authentication . API tokens are associated with designated Gladly users. To create and use an"
+    },
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "page. Replacing/Rotating API Tokens Should you lose this token, or wish to rotate your application keys, you can do the following: Generate a new token. Store the new token in a secure l"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Gladly API Introducing the Gladly API Overview REST API Lookup API Testing Getting Started Permissions Creating API Tokens Replacing/Rotating"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "ties of the Gladly API in a safe, secure space. We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment (",
+   "mcp_registry": {
+    "query": "gladly",
+    "hits": [
+     "dev.cotlet/gladly",
+     "dev.cotlet/gladly",
+     "dev.cotlet/gladly",
+     "io.usefulapi/gladly",
+     "io.usefulapi/gladly",
+     "io.usefulapi/gladly",
+     "io.usefulapi/gladly",
+     "io.usefulapi/gladly"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 21,
+   "app": "Slack",
+   "pages": [
+    {
+     "url": "https://api.slack.com/authentication/oauth-v2",
+     "via": "http"
+    },
+    {
+     "url": "https://api.slack.com/quickstart",
+     "via": "http"
+    },
+    {
+     "url": "https://api.slack.com/authentication/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 31605,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Installing via OAuth authorization code flow | Slack Developer Docs guide Skip to main content Guides"
+    },
+    "auth:Bot token": {
+     "status": "confirmed",
+     "evidence": "any Slack workspace to install your app. At the end of the OAuth flow, your app gains an access token. Your app's access token allows your app to open doors to the Slack platform. During the"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "the 2.0 version of the OAuth spec , and this is our second version of OAuth 2.0. For the rest of this guide, we'll just refer to it as \"OAuth\". How it works: a high-level overview"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "w. If you don't have a Slack workspace already, we recommend also setting up a developer sandbox . MacOS/Linux Windows 1 Install the Slack CLI Download the command-line tool for deve"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.Th3Slack3r/slacking-biz"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth1"
+   ],
+   "gated_cue": "t three steps to make OAuth work: requesting scopes, waiting for a user to give their approval, and exchanging a temporary authorization code for an access token. Redirecting a user",
+   "selfserve_cue": "w. If you don't have a Slack workspace already, we recommend also setting up a developer sandbox . MacOS/Linux Windows 1 Install the Slack CLI Download the command-line tool for deve",
+   "mcp_registry": {
+    "query": "slack",
+    "hits": [
+     "ai.smithery/smithery-ai-slack",
+     "ai.wakeshift/slackline",
+     "ai.waystation/slack",
+     "co.civai.nova/mcp-slack_android",
+     "com.insightfulpipe/slack",
+     "com.mcparmory/slack",
+     "com.mcparmory/slack",
+     "com.pulsemcp/slack"
+    ],
+    "vendor_hit": "io.github.Th3Slack3r/slacking-biz"
+   }
+  },
+  {
+   "id": 22,
+   "app": "Twilio",
+   "pages": [
+    {
+     "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+     "via": "http"
+    },
+    {
+     "url": "https://www.twilio.com/docs/iam/api-keys/key-resource-v1",
+     "via": "http"
+    },
+    {
+     "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 54541,
+   "checks": {
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "(link takes you to an external page) . To authenticate requests to the Twilio APIs, use HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the usernam"
+    },
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "elopment with AI On this page Ways to make requests to the Twilio APIs Authentication Use API keys Use your Account SID and Auth Token Twilio SDKs HTTP methods for API interactions Content"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "erview API requests API responses API mutation and conflict resolution API best practices REST API requests in PowerShell Accounts Overview Twilio Identity Access Management Documentat"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Twilio Docs home page Twilio Docs General Usage Get started Get started with your Twilio trial account Welcome to the new Twilio console A Beginner's Guide to the Command Line Set up y"
+    },
+    "mcp": {
+     "status": "no-evidence",
+     "evidence": null
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "Twilio Docs home page Twilio Docs General Usage Get started Get started with your Twilio trial account Welcome to the new Twilio console A Beginner's Guide to the Command Line Set up y",
+   "mcp_registry": {
+    "query": "twilio",
+    "hits": [
+     "io.github.codespar/mcp-twilio",
+     "io.github.codespar/mcp-twilio",
+     "io.github.mrfentmen/twilio-mcp-server",
+     "io.github.mrfentmen/twilio-mcp-server",
+     "io.github.mrfentmen/twilio-mcp-server",
+     "io.github.pipeworx-io/twilio",
+     "io.github.pipeworx-io/twilio",
+     "io.github.pipeworx-io/twilio"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 23,
+   "app": "Zoho Cliq",
+   "pages": [
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "via": "http"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/pricing.html",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 408845,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Authentication OAuth Token OpenAPI Specification (OAS)"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Rest API documentation | Cliq REST API Documentation Access Cliq Pricing Help Ce"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "channels File storage Meetings with screen share Remote work Chat export Standard Start free trial Get Started Everything in the Free edition + External channels Call recording Custom doma"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.github.princezoho/tangylimes"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": "an add-on for the Cliq Standard plan and above. - Additionally, the Cliq Professional and Enterprise plans include 3 free Networks. - Every org user added to a network will be considered as a net",
+   "selfserve_cue": "channels File storage Meetings with screen share Remote work Chat export Standard Start free trial Get Started Everything in the Free edition + External channels Call recording Custom doma",
+   "mcp_registry": {
+    "query": "zoho",
+    "hits": [
+     "com.devart/mcp-zohocrm",
+     "com.devart/mcp-zohodesk",
+     "io.github.asklokesh/zoho-crm-mcp-server",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm",
+     "io.github.pipeworx-io/zoho_crm"
+    ],
+    "vendor_hit": "io.github.princezoho/tangylimes"
+   }
+  },
+  {
+   "id": 24,
+   "app": "Lark (Larksuite)",
+   "pages": [
+    {
+     "url": "https://open.larksuite.com/document/",
+     "via": "browser"
+    },
+    {
+     "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/overview",
+     "via": "browser"
+    }
+   ],
+   "fetched": true,
+   "chars": 7296,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:App token": {
+     "status": "confirmed",
+     "evidence": "s Development process App types Custom app Store app Gadget Web app Bot User identities & access tokens User identities Access and scopes Auto login API access credentials Extensions AppLink Me"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "nferencing 60 APIs 22 Events App Information 14 APIs 6 Events Email 85 APIs 1 Event Approval 39 APIs 1 Event Search 2 APIs Company Information 2 APIs Admin 14 APIs AI 8 APIs At"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.meetlark/mcp-server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "nferencing 60 APIs 22 Events App Information 14 APIs 6 Events Email 85 APIs 1 Event Approval 39 APIs 1 Event Search 2 APIs Company Information 2 APIs Admin 14 APIs AI 8 APIs At",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "lark",
+    "hits": [
+     "ai.meetlark/mcp-server",
+     "ai.meetlark/mcp-server",
+     "com.cuelark/tools",
+     "com.cuelark/tools",
+     "com.larkella/larkella",
+     "com.splark/splark",
+     "com.splark/splark",
+     "com.splark/splark"
+    ],
+    "vendor_hit": "ai.meetlark/mcp-server"
+   }
+  },
+  {
+   "id": 25,
+   "app": "Pumble",
+   "pages": [
+    {
+     "url": "https://pumble.com/help/integrations/",
+     "via": "http"
+    },
+    {
+     "url": "https://pumble.com/help/getting-started/",
+     "via": "http"
+    },
+    {
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 25047,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:Webhook": {
+     "status": "confirmed",
+     "evidence": "Connect Zoom to Pumble with Zapier and Webhooks Automation & Workflow I"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "Help Changelog Guides FAQ Status Contact Book a demo Contact Integrations"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "How to use the Pumble MCP server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "Help Changelog Guides FAQ Status Contact Book a demo Contact Integrations",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "pumble",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 26,
+   "app": "Discord",
+   "pages": [
+    {
+     "url": "https://discord.com/developers/docs/topics/oauth2",
+     "via": "http"
+    },
+    {
+     "url": "https://discord.com/developers/topics/oauth2",
+     "via": "browser"
+    },
+    {
+     "url": "https://discord.com/oauth2/authorize",
+     "via": "browser"
+    }
+   ],
+   "fetched": true,
+   "chars": 29073,
+   "checks": {
+    "auth:Bot token": {
+     "status": "confirmed",
+     "evidence": "bot scope applications.commands.update allows your app to update its commands using a Bearer token - client credentials grant only applications.commands.permissions.update allows y"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "OAuth2 - Documentation - Discord Documentation Index Fetch the complete docu"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "OAuth2 URLs URL Description https://discord.com/oauth2/authorize Base authorization URL https://discord.com/api/oauth2/token Token URL https://discord.com/api/oauth2/token/revoke Token Revocation URL"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "es These are a list of all the OAuth2 scopes that Discord supports. Some scopes require approval from Discord to use. Requesting them from a user without approval from Discord may cause"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": "es These are a list of all the OAuth2 scopes that Discord supports. Some scopes require approval from Discord to use. Requesting them from a user without approval from Discord may cause",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "discord",
+    "hits": [
+     "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "ai.smithery/Danushkumar-V-mcp-discord",
+     "ai.smithery/sachicali-discordmcp-suite",
+     "app.lasers.guildcontrol/discord",
+     "app.lasers.guildcontrol/discord",
+     "app.lasers.guildcontrol/discord",
+     "app.lasers.guildcontrol/discord"
+    ],
+    "vendor_hit": "com.discordservers/search"
+   }
+  },
+  {
+   "id": 27,
+   "app": "Telegram",
+   "pages": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 578138,
+   "checks": {
+    "auth:Bot token": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "Approved Optional . Service message: a suggested post was approved suggested_post_approval_failed SuggestedPostApprovalFailed Optional . Service message: approval of a suggeste"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": "Approved Optional . Service message: a suggested post was approved suggested_post_approval_failed SuggestedPostApprovalFailed Optional . Service message: approval of a suggeste",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "telegram",
+    "hits": [
+     "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "ai.awraiter/telegram",
+     "co.civai.nova/telegram-agent",
+     "com.insightfulpipe/telegram",
+     "com.jojapi/telegram",
+     "com.limzo/telegram-group-stats",
+     "com.limzo/telegram-group-stats"
+    ],
+    "vendor_hit": "com.telegramtometatrader/ttmt"
+   }
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "pages": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 11930,
+   "checks": {
+    "auth:Access token": {
+     "status": "confirmed",
+     "evidence": "message, and setting up a test webhook endpoint. You'll also learn how to generate secure access tokens and send both template and non-template messages. Advanced features and further resources"
+    },
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "the code sample below, then paste the code into your terminal and run it. ```bash curl 'https://graph.facebook.com/v23.0/<TEST_BUSINESS_PHONE_NUMBER_ID>/messages' \\ -H 'Content-Type: application/json' \\ -H '"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "d-features) - View required and optional permissions for this use case and add them to an App Review submission, if applicable. - [**Quickstart**](https://developers.facebook.com/documentati"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "d-features) - View required and optional permissions for this use case and add them to an App Review submission, if applicable. - [**Quickstart**](https://developers.facebook.com/documentati",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "whatsapp",
+    "hits": [
+     "ai.darkfunnels/whatsapp-sales-agent",
+     "ai.darkfunnels/whatsapp-sales-agent",
+     "ai.izap/whatsapp",
+     "ai.izap/whatsapp",
+     "ai.izap/whatsapp",
+     "ai.izap/whatsapp",
+     "ai.izap/whatsapp",
+     "ai.izap/whatsapp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "pages": [
+    {
+     "url": "https://developer.aircall.io/api-references/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.aircall.io/images/api-references/authentication/oauth-e7de2c2f.png",
+     "via": "browser"
+    }
+   ],
+   "fetched": true,
+   "chars": 523582,
+   "checks": {
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "ST API Authentication Introduction OAuth \u00ef\u00b9\u00a3 Technology Partners Basic Auth \u00ef\u00b9\u00a3 Aircall customers Rate limiting Pagination Errors Versio"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "REST API Authentication Introduction OAuth \u00ef\u00b9\u00a3 Technology Partners Basic Auth \u00ef\u00b9\u00a3 Aircall customers Rate limiting"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ated with Sketch. REST API Authentication Introduction OAuth \u00ef\u00b9\u00a3 Technology Partners Ba"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "r. Mandatory field Query params status String Filter templates by approval status. See the status descriptions below. Optional field category String"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "r. Mandatory field Query params status String Filter templates by approval status. See the status descriptions below. Optional field category String",
+   "selfserve_cue": "403 Forbidden Exception: the line exceeded number of message limit for company on trial. 403 Forbidden access: company is not active. 403 Forbidden access: compa",
+   "mcp_registry": {
+    "query": "aircall",
+    "hits": [
+     "dev.cotlet/aircall",
+     "dev.cotlet/aircall",
+     "dev.cotlet/aircall",
+     "io.usefulapi/aircall",
+     "io.usefulapi/aircall",
+     "io.usefulapi/aircall",
+     "io.usefulapi/aircall",
+     "io.usefulapi/aircall"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 30,
+   "app": "Vonage",
+   "pages": [
+    {
+     "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.vonage.com/api/pricing",
+     "via": "failed"
+    },
+    {
+     "url": "https://developer.vonage.com/api/pricing.v2",
+     "via": "failed"
+    }
+   ],
+   "fetched": true,
+   "chars": 27820,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "rent authentication methods depending on which product you are using: API{filter} API Key and Secret (Header) JSON Web Token (JWT) Accounts Application"
+    },
+    "auth:JWT": {
+     "status": "confirmed",
+     "evidence": "pending on which product you are using: API{filter} API Key and Secret (Header) JSON Web Token (JWT) Accounts Application Audit Channel Manager"
+    },
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "Verify 2 Voice 3 Video 1 Messages supports both JWT and Basic authentication, however basic authentication does not support webhooks or advanced features su"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "vonage",
+    "hits": [
+     "io.github.Vonage/vonage-documentation-mcp"
+    ],
+    "vendor_hit": "io.github.Vonage/vonage-documentation-mcp"
+   }
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "pages": [
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/get-started/dev-token",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 67129,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ur API access levels are determined by the Google Cloud project you used to generate your OAuth credentials. If your app uses the user authentication workflow , then this is the pr"
+    },
+    "auth:Developer token": {
+     "status": "confirmed",
+     "evidence": "Developer token | Google Ads API | Google for Developers Skip to main con"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:gRPC": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "needs one developer token, but individual developers and companies creating new tools can apply for a new one if necessary. Both companies and individual developers can apply for a de"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "low the Make your first call quickstart or connect an AI assistant with the Google Ads MCP server . Go to Google Ads API Overview in Cloud Console What's changing? We intr"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "needs one developer token, but individual developers and companies creating new tools can apply for a new one if necessary. Both companies and individual developers can apply for a de",
+   "selfserve_cue": "s and Terms of Service.\" Root cause Your Google Cloud project may be on Google Cloud Free Trial program or has a suspended or disabled billing account. How to verify Check your Go",
+   "mcp_registry": {
+    "query": "google",
+    "hits": [
+     "academy.mycontent/google-ads",
+     "ai.adplane/google-ads",
+     "ai.adplane/google-ads",
+     "ai.adplane/google-ads",
+     "ai.adplane/google-ads",
+     "ai.adramp/google-ads",
+     "ai.adramp/google-ads",
+     "ai.adramp/google-ads"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 32,
+   "app": "Meta Ads",
+   "pages": [
+    {
+     "url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 9064,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "app gets access when they click **Allow**. ```html https://www.facebook.com/v27.0/dialog/oauth? client_id=<YOUR_APP_ID> &redirect_uri=<YOUR_URL> &scope=ads_management ``` **Note"
+    },
+    "auth:Access token": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ment` or `ads_read` permissions. Your app gets access when they click **Allow**. ```html https://www.facebook.com/v27.0/dialog/oauth? client_id=<YOUR_APP_ID> &redirect_uri=<YOUR_URL> &scope=ads_manage"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "s levels](https://developers.facebook.com/docs/graph-api/overview/access-levels). During [App Review](https://developers.facebook.com/docs/app-review), your app must also request specific pe"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "s levels](https://developers.facebook.com/docs/graph-api/overview/access-levels). During [App Review](https://developers.facebook.com/docs/app-review), your app must also request specific pe",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "meta",
+    "hits": [
+     "ai.adlio/meta-ads",
+     "ai.adweave/meta-ads-mcp",
+     "ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp",
+     "ai.agentapihub/facebook-meta-google-tiktok-ads-library-api-mcp",
+     "ai.fastmetal/fastmetal",
+     "ai.livingmeta/ai-in-research",
+     "ai.lumeta/lumeta",
+     "ai.metabind/banking-assistant"
+    ],
+    "vendor_hit": "ai.fastmetal/fastmetal"
+   }
+  },
+  {
+   "id": 33,
+   "app": "LinkedIn Ads",
+   "pages": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+     "via": "http"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/matched-audiences/getting-access-matched-audiences?view=li-lms-2026-11",
+     "via": "http"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lead-sync/getting-access-leadsync?view=li-lms-2026-11",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 33975,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ts each LinkedIn Marketing API product, who can access it, how to request access, and the OAuth permissions granted upon approval. General Availability (GA) programs are open to all app"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "The following table lists each LinkedIn Marketing API product, who can access it, how to request access, and the OAuth permissions granted upon approval. General Availability (GA) programs are"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "The following table lists each LinkedIn Marketing API product, who can access it, how to request access, and the OAuth permissions granted upon approval. General Availability (GA) programs are",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "linkedin",
+    "hits": [
+     "ai.agentapigate/linkedin-company-b2b-business-profile-mcp",
+     "ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp",
+     "ai.agentapihub/linkedin-company-b2b-business-profile-mcp",
+     "ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp",
+     "ai.com.mcp/linkedin",
+     "ai.com.mcp/linkedin",
+     "app.fluxgraph/linkedin",
+     "app.fluxgraph/linkedin"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 34,
+   "app": "GoHighLevel",
+   "pages": [
+    {
+     "url": "https://highlevel.stoplight.io/docs/integrations/",
+     "via": "browser"
+    }
+   ],
+   "fetched": true,
+   "chars": 126,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:Private integration token": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "no-evidence",
+     "evidence": null
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "gohighlevel",
+    "hits": [
+     "ai.makebox.mcp/gohighlevel",
+     "dev.cotlet/gohighlevel",
+     "dev.cotlet/gohighlevel",
+     "dev.cotlet/gohighlevel"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 35,
+   "app": "Mailchimp",
+   "pages": [
+    {
+     "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+     "via": "http"
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 9618,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "ch operations Alternative schemas Audiences endpoints (beta) API structure Authentication API keys OAuth 2 Methods and parameters Rate limits and timeouts Errors Webhooks Batch operations"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ions Alternative schemas Audiences endpoints (beta) API structure Authentication API keys OAuth 2 Methods and parameters Rate limits and timeouts Errors Webhooks Batch operations Alternat"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "e Copy page This page is for Mailchimp Marketing API. The Marketing API generally follows REST conventions, with some deviations. Resources are typically nouns like subscribers"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "eta) Mailchimp Marketing API Mailchimp Transactional Tools Release Notes Blog Integration Partner Program Products Mailchimp Marketing API Mailchimp Transactional Resources Tools Release Notes AP"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": "eta) Mailchimp Marketing API Mailchimp Transactional Tools Release Notes Blog Integration Partner Program Products Mailchimp Marketing API Mailchimp Transactional Resources Tools Release Notes AP",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "mailchimp",
+    "hits": [
+     "com.insightfulpipe/mailchimp",
+     "io.github.asklokesh/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server",
+     "io.github.cyanheads/mailchimp-mcp-server"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 36,
+   "app": "Klaviyo",
+   "pages": [
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_.md",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 55733,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "on All /api endpoints use API private keys to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an e"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": ". Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side A"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Klaviyo-API-Key your-private-api-key curl Copy curl --request GET \\ --url https://a.klaviyo.com/api/{endpoint}/ \\ --header 'Authorization: Klaviyo-API-Key your-private-api-key' \\"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "your app Klaviyo app listing requirements Create help docs for your integration Pass your app review Submit your app for review Create promotional material for your integration Monitor your"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ollections Klaviyo CLI Create an allowlist for your public API key Glossary index Klaviyo MCP server Available tools Connect to the MCP server Klaviyo Stripe Projects Agent Context Kl"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": "your app Klaviyo app listing requirements Create help docs for your integration Pass your app review Submit your app for review Create promotional material for your integration Monitor your",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "klaviyo",
+    "hits": [
+     "com.insightfulpipe/klaviyo",
+     "com.mcparmory/klaviyo",
+     "com.mcparmory/klaviyo",
+     "io.github.mrfentmen/klaviyo-mcp",
+     "io.github.pipeworx-io/klaviyo",
+     "io.github.pipeworx-io/klaviyo",
+     "io.github.pipeworx-io/klaviyo",
+     "io.github.pipeworx-io/klaviyo"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 37,
+   "app": "systeme.io",
+   "pages": [
+    {
+     "url": "https://developer.systeme.io/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 14775,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "ofile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section. Once you have your key, you're all set to embark on your first API request jour"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "e contacts, tags, and a variety of other operations integral to our platform. Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all user"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "systeme",
+    "hits": [
+     "dev.cotlet/systeme-io",
+     "dev.cotlet/systeme-io",
+     "dev.cotlet/systeme-io"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "pages": [
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 32503,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "multiple redirect URIs when configuring your app. The value given for redirect_uri during OAuth authorization will be matched against the redirect URIs listed in your app profile. They"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "e Pinterest Postman collection . On the collection site, select OAuth under Pinterest REST API (latest) in the left navigation panel. Then select Generate access token . Try out"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "uous refresh token valid. Once the refresh token has expired, you will need to explicitly request access again by repeating the Authorization Code flow. Once the refresh token has expired, you w"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists com.365pinterest/365-pinterest"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": "uous refresh token valid. Once the refresh token has expired, you will need to explicitly request access again by repeating the Authorization Code flow. Once the refresh token has expired, you w",
+   "selfserve_cue": "r numbers (A-Z, a-z, 0-9) and can't contain the word \"Pinterest\". Submit your request for trial access. Application requests are reviewed by Pinterest. You will receive an email notific",
+   "mcp_registry": {
+    "query": "pinterest",
+    "hits": [
+     "ai.agentapigate/sec-edgar-crypto-real-estate-pinterest-mcp",
+     "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "ai.agentapihub/sec-edgar-crypto-real-estate-pinterest-mcp",
+     "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+     "com.365pinterest/365-pinterest",
+     "com.getmcpads/pinterest-ads",
+     "com.getmcpads/pinterest-ads",
+     "com.getmcpads/pinterest-ads"
+    ],
+    "vendor_hit": "com.365pinterest/365-pinterest"
+   }
+  },
+  {
+   "id": 39,
+   "app": "Threads (Meta)",
+   "pages": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 6802,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "s tokens API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol. Access tokens are app-scoped (unique to the app and user pair) and can be sho"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "to grant your app these permissions, each permission must first be approved through the [App Review](https://developers.facebook.com/documentation/resp-plat-initiatives/individual-processes"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists app.threads-mcp/threads"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "to grant your app these permissions, each permission must first be approved through the [App Review](https://developers.facebook.com/documentation/resp-plat-initiatives/individual-processes",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "threads",
+    "hits": [
+     "ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp",
+     "ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp",
+     "app.threads-mcp/threads",
+     "com.mambabuilt/mcp-threads-keyword-search",
+     "com.mambabuilt/mcp-threads-keyword-search",
+     "com.mambabuilt/mcp-threads-profile-posts",
+     "com.mambabuilt/mcp-threads-profile-posts",
+     "com.mambabuilt/mcp-threads-profile-posts"
+    ],
+    "vendor_hit": "app.threads-mcp/threads"
+   }
+  },
+  {
+   "id": 40,
+   "app": "SendGrid",
+   "pages": [
+    {
+     "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authorization",
+     "via": "http"
+    },
+    {
+     "url": "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 49650,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Sender Resend a Sender verification Send Test E-Mail Send a Test Marketing Email Security API Keys API Keys API Overview Create API keys Retrieve an existing API Key Retrieve all API Keys"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ication Positive Feedback Negative Feedback Twilio supported SDKs The Twilio SendGrid Web REST API v3 provides SDKs for seven different languages. C# (link takes you to an external pag"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "sendgrid",
+    "hits": [
+     "io.github.Choppaaahh/sendgrid-mcp-secure",
+     "io.github.Neschadin/sendgrid-mcp",
+     "io.github.Neschadin/sendgrid-mcp",
+     "io.github.codespar/mcp-sendgrid",
+     "io.github.codespar/mcp-sendgrid",
+     "io.github.deyikong/sendgrid-mcp",
+     "io.github.deyikong/sendgrid-mcp",
+     "io.github.deyikong/sendgrid-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 41,
+   "app": "Shopify",
+   "pages": [
+    {
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "via": "http"
+    },
+    {
+     "url": "https://shopify.dev/docs/api/usage/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization/delegate-api-access",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 23025,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "r the Customer Account API, see Shopify API authentication instead. You don't implement OAuth by hand for most apps. Shopify CLI and the Shopify app templates handle the token flo"
+    },
+    "auth:Access token": {
+     "status": "confirmed",
+     "evidence": "t. Run background jobs and scheduled tasks, and subscribe to webhooks, using an offline access token that persists across sessions. Attribute actions to a specific staff member and enforce"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "app authentication Install AI Toolkit Ask about this page Copy MD Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "terminology These terms come up across Shopify's authentication flows and throughout the rest of this section. Anchor to Authentication and authorization Authentication and authorizat"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "after a merchant installs the app and approves its scopes. After installation and scope approval, an app can request tokens for later server-side work with client credentials (including"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "its Idempotent requests Feature previews Dev tools Shopify CLI Shopify AI Toolkit Shopify MCP Shopify Git Hub app React Router app package Stores Libraries and templates App data and"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": "after a merchant installs the app and approves its scopes. After installation and scope approval, an app can request tokens for later server-side work with client credentials (including",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "shopify",
+    "hits": [
+     "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+     "ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp",
+     "ai.gossiper/shopify-admin-mcp",
+     "app.bestappify/shopify-app-store",
+     "com.b2bprofileapi/b2b-shopify-merchant-company-profile-mcp",
+     "com.hasdata/shopify",
+     "com.hasdata/shopify",
+     "com.hasdata/shopify"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 42,
+   "app": "WooCommerce",
+   "pages": [
+    {
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 1181536,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Pagination Libraries and Tools Learn more Authentication REST API keys Authentication over HTTPS Authentication over HTTP Index HTTP"
+    },
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "d must have all query string values encoded. Authentication over HTTPS You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Se"
+    },
+    "auth:OAuth1": {
+     "status": "confirmed",
+     "evidence": "true and using under HTTPS } ) Authentication over HTTP You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted by an a"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "WooCommerce REST API Documentation - WP REST API v3 NAV"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "\"testmode\" : { \"id\" : \"testmode\" , \"label\" : \"Enable PayPal sandbox\" , \"description\" : \"PayPal sandbox can be used to test payments. Sign up for"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "\"testmode\" : { \"id\" : \"testmode\" , \"label\" : \"Enable PayPal sandbox\" , \"description\" : \"PayPal sandbox can be used to test payments. Sign up for",
+   "mcp_registry": {
+    "query": "woocommerce",
+    "hits": [
+     "com.addsynapse/woocommerce",
+     "com.addsynapse/woocommerce",
+     "com.insightfulpipe/woocommerce",
+     "dev.cotlet/woocommerce",
+     "dev.cotlet/woocommerce",
+     "dev.cotlet/woocommerce",
+     "io.github.AmitGurbani/mcp-server-woocommerce",
+     "io.github.AmitGurbani/mcp-server-woocommerce"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 43,
+   "app": "BigCommerce",
+   "pages": [
+    {
+     "url": "https://developer.bigcommerce.com/docs/start/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.bigcommerce.com/developer/docs/integrations/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 82342,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "account-level credentials Revoking account-level API credentials Migrating from legacy to OAuth Legacy API Accounts Benefits of migrating to OAuth How to migrate OAuth scopes Token crea"
+    },
+    "auth:Access token": {
+     "status": "confirmed",
+     "evidence": "bhooks and metafields App-level API accounts Creating app-level API credentials App-level access tokens Revoking app-level API credentials Delete apps carefully Account-level API accounts Creat"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "in API example request BigCommerce-encrypted payload JWTs Same-origin CORS authentication REST Storefront API Developer-configured authentication REST Provider APIs Resources Scroll to"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "API or Use Case Store-level API account App-level API account Account-level API account GraphQL Account API , including Users \u00d7 GraphQL Admin API \u00d7 \u00d7 GraphQL Storefront API \u00d7 B2B REST"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "vents Designing the UI Creating install buttons Following best practices Testing your app Approval requirements Publishing apps Overview Guide Glossary Postman collection Introduction 1: B"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "tions B2B AI Tools Additional Docs Archive Deprecated Closed Beta Programs Resources Docs MCP Server Product Docs Support Quick Start Sandboxes Tools & SDKs Remote Tunnels Support API"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic",
+    "jwt"
+   ],
+   "gated_cue": "vents Designing the UI Creating install buttons Following best practices Testing your app Approval requirements Publishing apps Overview Guide Glossary Postman collection Introduction 1: B",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "bigcommerce",
+    "hits": [
+     "io.github.mrfentmen/bigcommerce-mcp",
+     "io.github.mrfentmen/bigcommerce-mcp",
+     "io.github.mrfentmen/bigcommerce-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "pages": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/auth-z-scope-catalog.html",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 74563,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "o authorize this wide range of client types, we\u00e2\u0080\u0099ve defined a set of scopes based on the OAuth 2.1 standard. The available scopes give you control over exactly what clients are authori"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "PIs Learn how to set up the Shopper Login and API Access Service (SLAS) so that you can request access tokens for Shopper APIs. Shopper APIs are secured with the Shopper Login and API Access"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "AccessToken) sfcc.shopper-mcpagent Shopper Shopper Login Allow access to the B2C Commerce Model Context Protocol (MCP) Shopper Service from an AI Agent, for example, Claude or ChatGPT. B2C Commerce MCP"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": "PIs Learn how to set up the Shopper Login and API Access Service (SLAS) so that you can request access tokens for Shopper APIs. Shopper APIs are secured with the Shopper Login and API Access",
+   "selfserve_cue": "stances that you want to configure. Also select All Sandboxes instead of selecting each sandbox individually. Click Add . Scroll down to the bottom of the page. Cli",
+   "mcp_registry": {
+    "query": "salesforce",
+    "hits": [
+     "ai.cirra/salesforce-mcp",
+     "ai.cirra/salesforce-mcp",
+     "ai.cirra/salesforce-mcp",
+     "ai.smithery/kodey-ai-salesforce-mcp",
+     "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+     "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+     "ai.smithery/kodey-ai-salesforce-mcp-server",
+     "cloud.serpent/salesforce-devops"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "pages": [
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 22717,
+   "checks": {
+    "auth:OAuth1": {
+     "status": "confirmed",
+     "evidence": "h) This method is a good choice for integrating with a third-party system that supports OAuth 1.0a. After activating an integration (self activated), you can use the generated consumer k"
+    },
+    "auth:Bearer token": {
+     "status": "confirmed",
+     "evidence": "lidToken(); const headers = { 'Authorization': `Bearer ${accessToken}`, 'x-api-key': process.env.IMS_CLIENT_ID, 'x-gw-ims-org-id': process.env.IMS_ORG_ID, 'Cont"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "s-a-Service (PaaS) customers only. Adobe Commerce Cloud Services customers must refer to REST Authentication for details on authentication. For practical implementation guides"
+    },
+    "api:GraphQL": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "magento",
+    "hits": [
+     "com.insightfulpipe/magento",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud",
+     "io.github.juan-cinto-infracommerce/magento-cloud"
+    ],
+    "vendor_hit": "watch.magento/magento-watch"
+   }
+  },
+  {
+   "id": 46,
+   "app": "Squarespace",
+   "pages": [
+    {
+     "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.squarespace.com/commerce-apis/oauth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 18202,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "e API below. Then, depending on your development needs, authenticate requests by using an API key or OAuth access token. Remember: Requests only have access to data for the website th"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ates Custom Code Upcoming Changes Getting Started Overview Authentication and permissions OAuth Making requests Retrieve basic site information Using Commerce APIs Webhooks Contacts Ana"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "o the GET /authorize endpoint; all parameter values should be URL-encoded . Code GET https://login.squarespace.com/api/1/login/oauth/provider/authorize Query parameter Requirement Value client_id Required"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "ion live, simply request a review directly from the app details page in your dashboard. Approval takes your app out of Demo Mode. It doesn't list your app in Squarespace Extensions , wh"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "quarespace Developer Platform: APIs, Apps, and Docs Commerce APIs MCP Reseller APIs Templates Custom Code Upcoming Changes Getting Started Overview Authenticat"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ion live, simply request a review directly from the app details page in your dashboard. Approval takes your app out of Demo Mode. It doesn't list your app in Squarespace Extensions , wh",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "squarespace",
+    "hits": [
+     "io.github.mrfentmen/squarespace-mcp",
+     "io.github.mrfentmen/squarespace-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "pages": [
+    {
+     "url": "https://api-docs.ecwid.com/docs/get-access-token",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 2974,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:Access token": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "o page URLs. Skip to content \u2318 Ctrl k Ask Contact API support More Build apps Site Themes REST API Reference Storefronts (JS API) Webhook automations Discounts Guides Changelog AI Assi"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "ecwid",
+    "hits": [
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid",
+     "io.usefulapi/ecwid"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 48,
+   "app": "Gumroad",
+   "pages": [
+    {
+     "url": "https://gumroad.com/api",
+     "via": "browser"
+    },
+    {
+     "url": "https://gumroad.com/pricing",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 304524,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "its cURL example. Run gumroad <command> --help for the full list of flags. The Gumroad OAuth API is based around REST. We return JSON for every request, including errors . To start"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "mroad <command> --help for the full list of flags. The Gumroad OAuth API is based around REST. We return JSON for every request, including errors . To start using the API, you'll nee"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "d \u2014 disallowed tags and attributes are stripped \u2014 then served inside a sandboxed iframe ( sandbox=\"allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox\" ). It can: Run in"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "Discover Blog Pricing Features About Gumclaw Small Bets Gumroad MCP Help Board meetings Terms of Service Privacy Policy"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "stom HTML has no data-gumroad-action=\"buy\" element or gumroad:checkout postMessage. A waitlist form or gumroad:waitlist postMessage stands in for it while the product takes waitlist",
+   "selfserve_cue": "d \u2014 disallowed tags and attributes are stripped \u2014 then served inside a sandboxed iframe ( sandbox=\"allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox\" ). It can: Run in",
+   "mcp_registry": {
+    "query": "gumroad",
+    "hits": [
+     "io.github.marstudio360/gumroad-dna-mcp",
+     "io.github.marstudio360/gumroad-dna-mcp",
+     "io.github.marstudio360/gumroad-dna-mcp",
+     "io.usefulapi/gumroad",
+     "io.usefulapi/gumroad",
+     "io.usefulapi/gumroad",
+     "io.usefulapi/gumroad",
+     "io.usefulapi/gumroad"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "pages": [
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+     "via": "http"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-step-6-set-up-the-authorization-workflow",
+     "via": "http"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/selling-partner-authorizations-faq",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 79769,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "uthorization method based on your application type: Public applications: Must use OAuth 2.0 through Login with Amazon (LWA). Selling partners can authorize your application th"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "tep 3: Verify Your Identity Step 4: Complete the Service Profile for Your Company Step 5: Apply for Seller Central Roles Step 6: Invite Employees to Your Account Step 7: Connect With Seller"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "tep 3: Verify Your Identity Step 4: Complete the Service Profile for Your Company Step 5: Apply for Seller Central Roles Step 6: Invite Employees to Your Account Step 7: Connect With Seller",
+   "selfserve_cue": "a Solution Provider Portal Account Step 3: Create a Developer Profile Step 4: Register a Sandbox Application Step 5: Make Your First Call to the SP-API Sandbox Step 6: Set up the Authori",
+   "mcp_registry": {
+    "query": "amazon",
+    "hits": [
+     "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+     "ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp",
+     "ai.agentxray/amazon-seller-mcp",
+     "ai.agentxray/amazon-seller-mcp",
+     "ai.sellermate/amazon-ads",
+     "ai.trendsapi/amazon",
+     "ai.trendsapi/amazon",
+     "ai.trendsapi/amazon"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 50,
+   "app": "fanbasis",
+   "pages": [
+    {
+     "url": "https://fanbasis.com/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 6579,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "32% of churn before it sticks. Enterprise Enterprise sellers make more money here. Higher approval rates, lower fees, buyer financing and lead intelligence. For businesses who switch, it a"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "DKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates. MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull you"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "32% of churn before it sticks. Enterprise Enterprise sellers make more money here. Higher approval rates, lower fees, buyer financing and lead intelligence. For businesses who switch, it a",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "fanbasis",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "pages": [
+    {
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 17256,
+   "checks": {
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "lly by DataForSEO and is different from your account password. DataForSEO is using the Basic Authentication , which makes it possible to call our APIs with almost any programming language"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "entication from client import RestClient #You can download this file from here https://cdn.dataforseo.com/v3/examples/python/python_Client.zip #Instead of 'login' and 'password' use your credenti"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "usiness Listings Database Appendix AI-Optimized Response User Data Errors Sandbox ID List API Errors Webhook Resend Tasks Fixed Status Au"
+    },
+    "mcp": {
+     "status": "no-evidence",
+     "evidence": null
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "L App Info Task POST Tasks Ready Task GET Advanced HTML App Reviews Task POST Tasks Ready Task GET App Listings Categories Search",
+   "selfserve_cue": "usiness Listings Database Appendix AI-Optimized Response User Data Errors Sandbox ID List API Errors Webhook Resend Tasks Fixed Status Au",
+   "mcp_registry": {
+    "query": "dataforseo",
+    "hits": [
+     "com.insightfulpipe/dataforseo",
+     "io.scalably/dataforseo-mcp",
+     "io.scalably/dataforseo-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 52,
+   "app": "SE Ranking",
+   "pages": [
+    {
+     "url": "https://seranking.com/api/",
+     "via": "http"
+    },
+    {
+     "url": "https://seranking.com/api-pricing.html",
+     "via": "http"
+    },
+    {
+     "url": "https://seranking.com/api/data/getting-started/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 52380,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "ing account, navigate to the API tab under the Settings section, and retrieve your unique API key. Once you have your API key, you can use it for different purposes. For more information,"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ct to Data Studio Make Visual no-code automation to connect SE Ranking to the rest of your stack. Use Make\u2019s visual interface to integrate SE Ranking with CRMs, project man"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "o 20% Add-on Requires subscription Extend your existing SE Ranking Core, Growth, or Enterprise plan with an API add-on. MCP included For SE Ranking customers who need automat"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "odcast Academy Help center What\u2019s new Case studies Pricing Platform plans API Plans API & MCP API MCP Our data API Pricing See product tour API Keyword Researc"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "o 20% Add-on Requires subscription Extend your existing SE Ranking Core, Growth, or Enterprise plan with an API add-on. MCP included For SE Ranking customers who need automat",
+   "selfserve_cue": "Planable Manage your socials as a team See product tour Start free trial en en English de Deutsch fr Fran\u00e7ais es Espa\u00f1ol nl Nederlands it Italiano pt Portugu\u00eas ua",
+   "mcp_registry": {
+    "query": "se",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 53,
+   "app": "Ahrefs",
+   "pages": [
+    {
+     "url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 7324,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Bot Analytics Ahrefs Connect Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications C"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Introduction | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST A"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.ahrefs/mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "ahrefs",
+    "hits": [
+     "com.ahrefs/mcp",
+     "com.jojapi/ahrefs",
+     "com.mcparmory/ahrefs",
+     "com.mcparmory/ahrefs"
+    ],
+    "vendor_hit": "com.ahrefs/mcp"
+   }
+  },
+  {
+   "id": 54,
+   "app": "MrScraper",
+   "pages": [
+    {
+     "url": "https://docs.mrscraper.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 39001,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Make Your First API Request Before You Start Create a MrScraper account and obtain your API key from the Scraper API before following this guide. In this quickstart, you'll scrape a"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ct product information from an Amazon product page. curl --location --request POST 'https://sync.scraper.mrscraper.com/api/amazon/pdp/sync' \\ -H 'Authorization: bearer <MRSCRAPER_API_TOKEN>' \\ -H 'Con"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "tures Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Sche"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "mrscraper",
+    "hits": [
+     "io.github.mrscraper-com/mrscraper-mcp",
+     "io.github.mrscraper-com/mrscraper-mcp",
+     "io.github.mrscraper-com/mrscraper-mcp",
+     "io.github.mrscraper-com/mrscraper-mcp",
+     "io.github.mrscraper-com/mrscraper-mcp",
+     "io.github.mrscraper-com/mrscraper-mcp"
+    ],
+    "vendor_hit": "io.github.mrscraper-com/mrscraper-mcp"
+   }
+  },
+  {
+   "id": 55,
+   "app": "Apify",
+   "pages": [
+    {
+     "url": "https://docs.apify.com/api/v2",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.apify.com/api/v2/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.apify.com/api/v2/actor-oauth-connections-get",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 152413,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "fers to a resource in the API token owner's account. Authentication HTTP: Bearer Auth API Key: apiKey Bearer token provided in the Authorization header (e.g., Authorization: Bearer"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ion 2) provides programmatic access to the Apify platform . The API is organized around RESTful HTTP endpoints. You can download the complete OpenAPI schema of Apify API in the YAML"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "diate-effect , cannot-monetize-without-payout-billing-info , cannot-override-paid-actor-trial , cannot-permanently-delete-subscription , cannot-publish-actor , cannot-publish-actor"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.apify/apify-mcp-server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "diate-effect , cannot-monetize-without-payout-billing-info , cannot-override-paid-actor-trial , cannot-permanently-delete-subscription , cannot-publish-actor , cannot-publish-actor",
+   "mcp_registry": {
+    "query": "apify",
+    "hits": [
+     "ai.xomia/xomiadata-apify-actors",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server",
+     "com.apify/apify-mcp-server"
+    ],
+    "vendor_hit": "com.apify/apify-mcp-server"
+   }
+  },
+  {
+   "id": 56,
+   "app": "Firecrawl",
+   "pages": [
+    {
+     "url": "https://docs.firecrawl.dev/introduction",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.firecrawl.dev/quickstarts/claude-code",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.firecrawl.dev/quickstarts/claude-desktop",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 23881,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Get started Build directly with the API Scrape your first page now. No account or API key is required for this request. cURL # No API key needed to get started \u2014 add -H \"Authori"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "\"Authorization: Bearer $FIRECRAWL_API_KEY\" for higher rate limits: curl -s -X POST \"https://api.firecrawl.dev/v2/scrape\" \\ -H \"Content-Type: application/json\" \\ -d '{ \"url\": \"https://f"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "illing Enterprise Core Endpoints Alexandria Search Scrape More Monitor Interact / Browser Sandbox Parse Map Crawl Agent Quickstarts Node.js Serverless PHP Ruby Python Go Rust Elixir Java"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.firecrawl/firecrawl-mcp-server"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": "n your browser. Sign in to Firecrawl, choose a team, and approve access. On Team or Enterprise plans, an organization Owner may need to allow the connector before members can connect. Can",
+   "selfserve_cue": "illing Enterprise Core Endpoints Alexandria Search Scrape More Monitor Interact / Browser Sandbox Parse Map Crawl Agent Quickstarts Node.js Serverless PHP Ruby Python Go Rust Elixir Java",
+   "mcp_registry": {
+    "query": "firecrawl",
+    "hits": [
+     "co.civai.nova/mcp-firecrawl",
+     "com.mcparmory/firecrawl",
+     "com.mcparmory/firecrawl",
+     "io.github.Ansarii/firecrawl-stealth-mcp",
+     "io.github.firecrawl/firecrawl-mcp-server",
+     "io.github.firecrawl/firecrawl-mcp-server",
+     "io.github.firecrawl/firecrawl-mcp-server",
+     "io.github.firecrawl/firecrawl-mcp-server"
+    ],
+    "vendor_hit": "io.github.firecrawl/firecrawl-mcp-server"
+   }
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "pages": [
+    {
+     "url": "https://docs.brightdata.com/introduction",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.brightdata.com/api-reference/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.brightdata.com/quickstart",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 24687,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "e web data Scrape any site, buy ready-made datasets. Thousands of pre-built scrapers, one API key. Read https://docs.brightdata.com/llms.txt and get me set up with Bright Data Copied Co"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "every scraper has its own dataset_id : change that value and the input URL, and keep the rest of the request identical. In the SDKs, call the matching method instead. Site dataset_i"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "docs.brightdata.com/llms.txt and get me set up with Bright Data Copied Copy prompt 5,000 free credits per month , no credit card required. See the free tier . Quickstart Scrape your first pa"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "app.brightlyai/brightly"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": "docs.brightdata.com/llms.txt and get me set up with Bright Data Copied Copy prompt 5,000 free credits per month , no credit card required. See the free tier . Quickstart Scrape your first pa",
+   "mcp_registry": {
+    "query": "bright",
+    "hits": [
+     "ai.smithery/luminati-io-brightdata-mcp",
+     "app.brightlyai/brightly",
+     "co.brightkey/education-data",
+     "co.brightkey/education-data",
+     "com.brightmoot/brightmoot",
+     "com.brightsec/mcp",
+     "com.calcbright/calcbright",
+     "com.calcbright/calcbright"
+    ],
+    "vendor_hit": "app.brightlyai/brightly"
+   }
+  },
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "pages": [
+    {
+     "url": "https://github.com/sherlock-project/sherlock",
+     "via": "http"
+    },
+    {
+     "url": "https://github.com/pricing",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 28989,
+   "checks": {
+    "auth:None": {
+     "status": "confirmed",
+     "evidence": null
+    },
+    "api:CLI": {
+     "status": "confirmed",
+     "evidence": "down social media accounts by username across social networks sherlockproject.xyz Topics cli cti cybersecurity forensics hacktoberfest information-gathering infosec linux osint pente"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "local tool, no credentials"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "s Developers Developer API Education GitHub CLI GitHub Desktop GitHub Mobile Integrations MCP Registry Training Build with Copilot Support Docs Community Forum Professional Services P"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ed development, governed at enterprise scale $ 21 USD per user / month Start a free trial Contact Sales GitHub Enterprise now includes access to GitHub Copilot. Learn more Everything from Team",
+   "selfserve_cue": "here's a lot you can do with GitHub. That's why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security. Start free for 30 days C",
+   "mcp_registry": {
+    "query": "sherlock",
+    "hits": [
+     "com.hostsherlock/mcp",
+     "com.hostsherlock/mcp",
+     "com.hostsherlock/mcp",
+     "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+     "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+     "io.github.jcucci/dotnet-sherlock-mcp",
+     "io.github.jcucci/dotnet-sherlock-mcp",
+     "io.github.jcucci/dotnet-sherlock-mcp"
+    ],
+    "vendor_hit": "com.hostsherlock/mcp"
+   }
+  },
+  {
+   "id": 59,
+   "app": "Waterfall.io",
+   "pages": [
+    {
+     "url": "https://waterfall.io/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 8931,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "all.io/v1/prospector' \\ --header 'Content-Type: application/json' \\ --header 'x-waterfall-api-key: YOURKEY' \\ --data '{ \"domain\": \"stripe.com\", \"title_filter\": \"(marketing directo"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "siness profiles - ready for scoring, segmenting and outreach Preview curl --location 'https://api.waterfall.io/v1/prospector' \\ --header 'Content-Type: application/json' \\ --header 'x-waterfall-api-key:"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.github.waterfallbridge/mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "waterfall",
+    "hits": [
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-email-waterfall-orchestrator",
+     "com.mambabuilt/mcp-mobile-phone-waterfall-orchestrator",
+     "com.mambabuilt/mcp-mobile-phone-waterfall-orchestrator"
+    ],
+    "vendor_hit": "io.github.waterfallbridge/mcp"
+   }
+  },
+  {
+   "id": 60,
+   "app": "Clay",
+   "pages": [
+    {
+     "url": "https://www.clay.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://www.clay.com/pricing",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 40122,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "s to web research. You can generate any custom data points using Claygent. Bring your own API key Start 14-day trial or buy now Launch For small teams building and automating prospecting"
+    },
+    "auth:Webhook": {
+     "status": "confirmed",
+     "evidence": "limited search, 250k Audience import Integrate with any HTTP API Automate any signal via webhook Track web intent signals Unlimited ad audiences Buy domains and emails for the Clay Se"
+    },
+    "api:Webhook": {
+     "status": "confirmed",
+     "evidence": "limited search, 250k Audience import Integrate with any HTTP API Automate any signal via webhook Track web intent signals Unlimited ad audiences Buy domains and emails for the Clay Se"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "GTM engineering era begins now Resources Get started lesson University Use case templates Partner programs Community FAQ Company Contact us About Careers Jobs Integrate with Clay Status Customers"
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists app.clayware/clayware"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "GTM engineering era begins now Resources Get started lesson University Use case templates Partner programs Community FAQ Company Contact us About Careers Jobs Integrate with Clay Status Customers",
+   "selfserve_cue": "Solutions Resources Resources Company Company Pricing Pricing \u2318 K Log in Get a demo Start free trial Product Product Solutions Solutions Resources Resources Company Company Pricing Pricing L",
+   "mcp_registry": {
+    "query": "clay",
+    "hits": [
+     "app.clayware/clayware",
+     "app.clayware/clayware",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+     "com.mambabuilt/mcp-clay-to-instantly-smartlead-push"
+    ],
+    "vendor_hit": "app.clayware/clayware"
+   }
+  },
+  {
+   "id": 61,
+   "app": "GitHub",
+   "pages": [
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/quickstart",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 42845,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ent tasks Agent tasks Agents Secrets Variables Apps GitHub Apps Installations Marketplace OAuth authorizations Webhooks Billing Budgets Billing usage Branches Branches Protected branche"
+    },
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "pes Members Network configurations Organization roles Organizations Outside collaborators Personal access tokens Rule suites Rules Security managers Webhooks Packages Packages Pages Pages Private regis"
+    },
+    "auth:GitHub App": {
+     "status": "confirmed",
+     "evidence": "pes Members Network configurations Organization roles Organizations Outside collaborators Personal access tokens Rule suites Rules Security managers Webhooks Packages Packages Pages Pages Private regis"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Authenticating to the REST API - GitHub Docs Skip to main content Skip to content GitHub Docs Search or ask Copilo"
+    },
+    "api:GraphQL": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.githubcard/mcp"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic",
+    "jwt"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "github",
+    "hits": [
+     "ai.agentapigate/github-huggingface-arxiv-papers-repos-search-api-mcp",
+     "ai.agentapihub/github-huggingface-arxiv-papers-repos-search-api-mcp",
+     "ai.smithery/Hint-Services-obsidian-github-mcp",
+     "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+     "ai.smithery/smithery-ai-github",
+     "app.tuper/github-repos",
+     "com.a2awire/data-github-changelog-platform-change-announcement",
+     "com.a2awire/data-github-changelog-platform-change-announcement"
+    ],
+    "vendor_hit": "com.githubcard/mcp"
+   }
+  },
+  {
+   "id": 62,
+   "app": "Vercel",
+   "pages": [
+    {
+     "url": "https://vercel.com/docs/rest-api",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 74217,
+   "checks": {
+    "auth:Bearer token": {
+     "status": "confirmed",
+     "evidence": "hive-ai-gateway-budget-default.md) | Archive AI Gateway budget default | | **PATCH** | [`/api-keys/{apiKeyID}/quota`](/docs/rest-api/ai-gateway/update-an-ai-gateway-api-key-budget.md) | Up"
+    },
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "--- title: Vercel REST API Reference product: vercel url: /docs/rest-api canonical_url: \"https://vercel.com/docs"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "| List sandboxes | | **POST** | [`/v2/sandboxes`](/docs/rest-api/sandboxes/create-a-named-sandbox.md) | Create a named sandbox | | **GET** | [`/v2/sandboxes/snapshots`](/docs/rest-api/san"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "app.vercel.agent-permissions-index/agent-permissions-index"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ST** | [`/v1/teams/{teamId}/request`](/docs/rest-api/teams/request-access-to-a-team.md) | Request access to a team | | **GET** | [`/v1/teams/{teamId}/request/{userId}`](/docs/rest-api/teams/get-",
+   "selfserve_cue": "| List sandboxes | | **POST** | [`/v2/sandboxes`](/docs/rest-api/sandboxes/create-a-named-sandbox.md) | Create a named sandbox | | **GET** | [`/v2/sandboxes/snapshots`](/docs/rest-api/san",
+   "mcp_registry": {
+    "query": "vercel",
+    "hits": [
+     "app.vercel.agent-permissions-index/agent-permissions-index",
+     "app.vercel.agent-shopping-tracker/feed",
+     "app.vercel.agent-svg-registry/mcp",
+     "app.vercel.agentready-rho/agentready",
+     "app.vercel.aididwhat/aididwhat",
+     "app.vercel.auditflag-lac/auditflag",
+     "app.vercel.automaton-tx-explainer/base-tools",
+     "app.vercel.automaton-tx-explainer/base-tools"
+    ],
+    "vendor_hit": "app.vercel.agent-permissions-index/agent-permissions-index"
+   }
+  },
+  {
+   "id": 63,
+   "app": "Netlify",
+   "pages": [
+    {
+     "url": "https://docs.netlify.com/api/get-started/",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.netlify.com/manage/security/secure-netlify-access/configure-team-saml-sso",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 57811,
+   "checks": {
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "plication client key and a client secret secret Sensitive credentials, like passwords and API keys, that must be kept private. \u00d7 to integrate with the Netlify API. You can register a new"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "\" User-Agent: MyApp (YOUR_NAME@EXAMPLE.COM) \" \\ -H \" Authorization: Bearer YOUR_OAUTH2_ACCESS_TOKEN \" \\ https://api.netlify.com/api/v1/sites Authentication Section"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "as Markdown View as Markdown Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject Java"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "g .md to its URL. The new Netlify experience is here. Learn more or join the waitlist . API And CLI Guides / API Guides Get started with"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "g .md to its URL. The new Netlify experience is here. Learn more or join the waitlist . API And CLI Guides / API Guides Get started with",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "netlify",
+    "hits": [
+     "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+     "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+     "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+     "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+     "app.netlify.agent-kb-y83q/kb",
+     "app.netlify.agent-kb-y83q/kb",
+     "app.netlify.agent-rescue-desk/production-triage",
+     "app.netlify.automatom-x402/web-data-toolkit"
+    ],
+    "vendor_hit": "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist"
+   }
+  },
+  {
+   "id": 64,
+   "app": "Cloudflare",
+   "pages": [
+    {
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/index.md",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 22402,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "create additional API tokens via the API . Previous Under a DDoS attack? Next Get Global API key (legacy) Was this helpful? Yes No Edit page Report issue On this page Overview Edit page"
+    },
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "create additional API tokens via the API . Previous Under a DDoS attack? Next Get Global API key (legacy) Was this helpful? Yes No Edit page Report issue On this page Overview Edit page"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "via API Control API Access Restrict tokens Roll tokens API token template URLs Reference REST API \u00e2\u0086\u0097\u00ef\u00b8\u008e API GraphQL API \u00e2\u0086\u0097\u00ef\u00b8\u008e Wrangler API \u00e2\u0086\u0097\u00ef\u00b8\u008e API token permissions API deprecati"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "loudflare Docs llms.txt \u00e2\u0086\u0097\u00ef\u00b8\u008e Cloudflare Docs llms-full.txt \u00e2\u0086\u0097\u00ef\u00b8\u008e Getting started Plans Contact sales Partners Find a partner Startups Under attack? Domain name search Company About Careers I"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.cloudflare.mcp/mcp"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": "loudflare Docs llms.txt \u00e2\u0086\u0097\u00ef\u00b8\u008e Cloudflare Docs llms-full.txt \u00e2\u0086\u0097\u00ef\u00b8\u008e Getting started Plans Contact sales Partners Find a partner Startups Under attack? Domain name search Company About Careers I",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "cloudflare",
+    "hits": [
+     "com.cloudflare.mcp/mcp",
+     "com.jojapi/bypass-cloudflare-api",
+     "com.jojapi/cloudflare-solver",
+     "com.trycloudflare.annotated-lot-operational-tourism/kai-agi",
+     "com.trycloudflare.barrier-sought-lbs-reader/quotes",
+     "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
+     "com.trycloudflare.candy-josh-writers-balance/yultrace-audit",
+     "com.trycloudflare.candy-josh-writers-balance/yultrace-audit"
+    ],
+    "vendor_hit": "com.cloudflare.mcp/mcp"
+   }
+  },
+  {
+   "id": 65,
+   "app": "Supabase",
+   "pages": [
+    {
+     "url": "https://supabase.com/docs/guides/api/api-keys",
+     "via": "http"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/auth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 33889,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "API keys | Supabase Docs Skip to content DOCS Start Products Build Manage Reference Resour"
+    },
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "API keys | Supabase Docs Skip to content DOCS Start Products Build Manage Reference Resour"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ript or an internal provisioning service. Authenticate with a personal access token . An OAuth application needs the secrets:read scope. A personal access token you've scoped needs"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Reference Resources Products Database Auth Storage Edge Functions Realtime Data API (REST) AI & Vectors Cron Queues GraphQL API Build AI Tools Local Development & CLI Deployment &"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "ts Database Auth Storage Edge Functions Realtime Data API (REST) AI & Vectors Cron Queues GraphQL API Build AI Tools Local Development & CLI Deployment & Branching Self-Hosting Integratio"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.supabase/mcp"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "supabase",
+    "hits": [
+     "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+     "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+     "ai.smithery/pinion05-supabase-mcp-lite",
+     "ai.smithery/pinion05-supabase-mcp-lite",
+     "ai.waystation/supabase",
+     "com.supabase/mcp",
+     "com.supabase/mcp",
+     "com.supabase/mcp"
+    ],
+    "vendor_hit": "com.supabase/mcp"
+   }
+  },
+  {
+   "id": 66,
+   "app": "Neo4j",
+   "pages": [
+    {
+     "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+     "via": "http"
+    },
+    {
+     "url": "https://neo4j.com/docs/getting-started/current/",
+     "via": "http"
+    },
+    {
+     "url": "https://neo4j.com/pricing/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 69157,
+   "checks": {
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "led on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the standard format (R"
+    },
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "D CSV Import from a relational database into Neo4j Importing JSON data from a REST API into Neo4j Create an application Using Neo4j from Java Spring D"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required Start learning with access to all graph tools"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.neo4j-contrib/gds-agent"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "stories Case studies, customer videos, proof points, and more Contact Sales Developers LEARNING CENTERS Dev Center Best prac",
+   "selfserve_cue": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required Start learning with access to all graph tools",
+   "mcp_registry": {
+    "query": "neo4j",
+    "hits": [
+     "io.github.neo4j-contrib/gds-agent",
+     "io.github.neo4j-contrib/gds-agent",
+     "io.github.neo4j-contrib/gds-agent",
+     "io.github.neo4j-contrib/gds-agent",
+     "io.github.neo4j-contrib/gds-agent",
+     "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+     "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+     "io.github.neo4j-contrib/mcp-neo4j-aura-manager"
+    ],
+    "vendor_hit": "io.github.neo4j-contrib/gds-agent"
+   }
+  },
+  {
+   "id": 67,
+   "app": "Snowflake",
+   "pages": [
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.snowflake.com/fr/developer-guide/sql-api/authenticating",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.snowflake.com/de/developer-guide/sql-api/authenticating",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 48056,
+   "checks": {
+    "auth:JWT": {
+     "status": "confirmed",
+     "evidence": "next sections explain how to add this information to the request: Using OAuth Using key-pair authentication Using workload identity federation Using OAuth \u00b6 To use OAuth, f"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ormation. The next sections explain how to add this information to the request: Using OAuth Using key-pair authentication Using workload identity federation Using OAuth \u00b6"
+    },
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "hentication. See Introduction to OAuth for details on how to set up OAuth and get an OAuth token. Use Snowflake CLI to verify that you can use a generated OAuth token to connect to"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "d procedures Logging, Tracing, and Metrics Snowflake APIs Snowflake Python APIs Snowflake REST APIs SQL API Introduction Endpoints Authentication Submitting requests Handling responses"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.Snowflake-Labs/mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "snowflake",
+    "hits": [
+     "io.github.Snowflake-Labs/mcp",
+     "io.github.Snowflake-Labs/mcp",
+     "io.github.alphaparkinc/genpark-distributed-id-snowflake-generator-skill",
+     "io.github.nsphung/mcp-snowflake-server",
+     "io.github.nsphung/mcp-snowflake-server",
+     "io.github.nsphung/mcp-snowflake-server",
+     "io.github.nsphung/mcp-snowflake-server",
+     "io.github.nsphung/mcp-snowflake-server"
+    ],
+    "vendor_hit": "io.github.Snowflake-Labs/mcp"
+   }
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "pages": [
+    {
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://www.mongodb.com/pricing",
+     "via": "http"
+    },
+    {
+     "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 58187,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "he following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn how to use service accounts and API keys to"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ion API accepts the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn how to use service accounts"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "\u2192 Atlas Stream Processing Build event-driven applications with data-in-motion and data-at-rest. See pricing \u2192 Atlas Data Federation Query application and cloud data together with a ser"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "on Accesses 0.0010 0.0010 0.0015 0.0010 0.0011 0.0011 0.0010 0.0010 0.0011 FAQ Is there a free tier available for MongoDB Atlas? What does it include? Yes, MongoDB Atlas offers a free-forev"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.mongodb-js/mongodb-mcp-server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ments proving your student status Own a GitHub personal account Are at least 13 years old Apply for MongoDB for Startups \u2192 Apply for MongoDB for Educators \u2192 Access GitHub Student Developer",
+   "selfserve_cue": "on Accesses 0.0010 0.0010 0.0015 0.0010 0.0011 0.0011 0.0010 0.0010 0.0011 FAQ Is there a free tier available for MongoDB Atlas? What does it include? Yes, MongoDB Atlas offers a free-forev",
+   "mcp_registry": {
+    "query": "mongodb",
+    "hits": [
+     "ai.getvda/elasticsearch-mongodb-redis-stack-generator-elasticsearch-elasticsearch",
+     "ai.getvda/memcached-mongodb-redis-compose-generator",
+     "ai.getvda/rabbitmq-elasticsearch-mongodb-stack-generator",
+     "ai.getvda/rabbitmq-postgres-mongodb-stack-generator",
+     "io.github.fean-developer/mongodb-readonly-mcp",
+     "io.github.infoinlet-marketplace/mcp-mongodb",
+     "io.github.mongodb-js/mongodb-mcp-server",
+     "io.github.mongodb-js/mongodb-mcp-server"
+    ],
+    "vendor_hit": "io.github.mongodb-js/mongodb-mcp-server"
+   }
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "pages": [
+    {
+     "url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.datadoghq.com/api/latest/authentication.md",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.datadoghq.com/api/latest/authentication/validate-api-key/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 43096,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "ters APM Trace App Builder Application Security Audit Authentication Validate API key AuthN Mappings AWS Integration AWS Logs Integration Azure Integration Bits AI B"
+    },
+    "auth:Application key": {
+     "status": "confirmed",
+     "evidence": "ters APM Trace App Builder Application Security Audit Authentication Validate API key AuthN Mappings AWS Integration AWS Logs Integration Azure Integration Bits AI B"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "hentication - Datadog API For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest/authentication.md . A documentation index is available at /llms.txt . Product The"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "ESG Report Trust Hub Blog The Monitor Engineering AI Security Labs Login GET STARTED FREE Free Trial Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Usi"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "Agent Builder Bits Code Bits Security Analyst Datadog for AI Agent Observability AI Guard MCP Server Pup CLI GPU Monitoring dashboard Platform Capabilities Built-in features"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "ESG Report Trust Hub Blog The Monitor Engineering AI Security Labs Login GET STARTED FREE Free Trial Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Usi",
+   "mcp_registry": {
+    "query": "datadog",
+    "hits": [
+     "com.mcparmory/datadog",
+     "com.mcparmory/datadog",
+     "io.github.TANTIOPE/datadog-mcp",
+     "io.github.us-all/datadog",
+     "io.github.us-all/datadog",
+     "io.github.us-all/datadog",
+     "io.github.us-all/datadog",
+     "io.github.us-all/datadog"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 70,
+   "app": "Sentry",
+   "pages": [
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.sentry.io/security-legal-pii/security/token-formats/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 28036,
+   "checks": {
+    "auth:Bearer token": {
+     "status": "confirmed",
+     "evidence": "ion, we have several placeholders that appear between curly braces or chevrons, such as {API_KEY} or <auth_token> , which you will need to replace with one of your authentication token"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "user authentication token are specific to your user, such as Retrieve an Organization . OAuth2 For third-party applications that need to access Sentry on behalf of users, Sentry suppor"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "le, when the documentation says: Bash Copied curl -H 'Authorization: Bearer {TOKEN}' https://sentry.io/api/0/organizations/ { organization_slug } /projects/ curl -H 'Authorization: Bearer {TO"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Replays SCIM Seer Snapshots Spike Protection Notifications Teams Users Product Changelog Sandbox More Home API Reference Authentication Copy page API Authentication Auth Tokens Authent"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.0xpi.sdsentry/sds-lookup"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "Replays SCIM Seer Snapshots Spike Protection Notifications Teams Users Product Changelog Sandbox More Home API Reference Authentication Copy page API Authentication Auth Tokens Authent",
+   "mcp_registry": {
+    "query": "sentry",
+    "hits": [
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.0xpi.sdsentry/sds-lookup",
+     "com.lihaila/dissentry",
+     "com.mcparmory/sentry"
+    ],
+    "vendor_hit": "com.0xpi.sdsentry/sds-lookup"
+   }
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "pages": [
+    {
+     "url": "https://developers.notion.com/docs/authorization",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.notion.com/guides/authorization/credential-security",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.notion.com/guides/mcp/enterprise-managed-authorization",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 43132,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ions Making API requests with an internal connection Personal access token authentication OAuth integration auth flow set-up How to make an OAuth integration OAuth integration authoriza"
+    },
+    "auth:Internal token": {
+     "status": "confirmed",
+     "evidence": "yment system to set the token in the environment. Learn more: Best Practices for Handling API Keys Making API requests with an internal connection Any time your connection interacts wi"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "tab and retrieve the API token in this tab. The API token will be used to authenticate REST API requests. The connection sends the same token in every API request. Find the API to"
+    },
+    "access": {
+     "status": "contradicted",
+     "evidence": "e Build an MCP client . Requirements Enterprise-managed authorization is part of the Enterprise plan. The workspace must use SAML SSO. An admin turns on Enterprise-managed connections in"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.notion/mcp"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic",
+    "jwt"
+   ],
+   "gated_cue": "e Build an MCP client . Requirements Enterprise-managed authorization is part of the Enterprise plan. The workspace must use SAML SSO. An admin turns on Enterprise-managed connections in",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "notion",
+    "hits": [
+     "ai.smithery/smithery-notion",
+     "com.foreverworks/notion",
+     "com.foreverworks/notion",
+     "com.foreverworks/notion",
+     "com.insightfulpipe/notion",
+     "com.mcparmory/notion",
+     "com.mcparmory/notion",
+     "com.notion/mcp"
+    ],
+    "vendor_hit": "com.notion/mcp"
+   }
+  },
+  {
+   "id": 72,
+   "app": "Airtable",
+   "pages": [
+    {
+     "url": "https://airtable.com/developers/web/api/authentication",
+     "via": "browser"
+    },
+    {
+     "url": "https://airtable.com/developers/web/api/oauth-reference",
+     "via": "browser"
+    },
+    {
+     "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+     "via": "failed"
+    }
+   ],
+   "fetched": true,
+   "chars": 20853,
+   "checks": {
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "ade through HTTPS. Passing personal access tokens and OAuth access tokens via the legacy api_key URL parameter is not supported. Types of token As of February 1st 2024, the deprecation"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Docs Agent tools Web API Interface extensions Scripting \u2318K Overview Authentication Scopes OAuth reference Errors Rate limits Billing plans Changelog Guides Personal access tokens OAuth"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "by inputting their tokens into the HTTP authorization bearer token header. Example: curl https://api.airtable.com/v0/YOUR_BASE_ID/YOUR_TABLE_ID_OR_NAME -H \\ \"Authorization: Bearer YOUR_TOKEN\" All API reques"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "airtable",
+    "hits": [
+     "ai.waystation/airtable",
+     "com.airtable/mcp",
+     "com.insightfulpipe/airtable",
+     "com.mcparmory/airtable",
+     "com.mcparmory/airtable",
+     "io.github.Automations-Project/airtable-user-mcp",
+     "io.github.domdomegg/airtable-mcp-server",
+     "io.github.domdomegg/airtable-mcp-server"
+    ],
+    "vendor_hit": "com.airtable/mcp"
+   }
+  },
+  {
+   "id": 73,
+   "app": "Linear",
+   "pages": [
+    {
+     "url": "https://linear.app/developers/graphql",
+     "via": "http"
+    },
+    {
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://linear.app/developers/oauth-actor-authorization",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 37302,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "tion so you can query the whole schema. Authentication \u2060 The Linear API supports personal API keys and OAuth2 authentication. OAuth \u2060 If you\u2019re building an application for others to use, w"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ing Deprecations Webhooks Attachments Managing Customers GraphQL Schema \u2197 Authentication OAuth 2.0 authentication OAuth actor authorization OAuth application manifests File storage authe"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "Skip to content \u2192 Developers Sign up Open app GraphQL API Getting started Pagination Filtering Rate limiting Deprecations Webhooks Attachments"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "app.linear/linear"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "linear",
+    "hits": [
+     "app.linear/linear",
+     "app.linear/linear",
+     "app.linear/linear",
+     "co.civai.nova/mcp-linear",
+     "dev.wirecat/linear-cli",
+     "io.github.Evozim/linear-broker",
+     "io.github.adelaidasofia/linear-mcp",
+     "io.github.magurelabs/linear"
+    ],
+    "vendor_hit": "app.linear/linear"
+   }
+  },
+  {
+   "id": 74,
+   "app": "Jira",
+   "pages": [
+    {
+     "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-forge/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 28157,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "Getting started with Forge Security Security overview Security for Forge apps Scopes for OAuth 2.0 (3LO) and Forge apps OAuth 2.0 (3LO) apps Basic auth for REST APIs Data security policy"
+    },
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "te themselves using basic authentication with an Atlassian account email address and API token . Authentication using passwords has been deprecated. Basic authentication is not as"
+    },
+    "auth:Basic": {
+     "status": "confirmed",
+     "evidence": "Basic auth for REST APIs Developer Documentation Resources News and Upda"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get S"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.Kujirafu/agentlore"
+    }
+   },
+   "possibly_missed_auth": [
+    "jwt"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "jira",
+    "hits": [
+     "ai.waystation/jira",
+     "com.mcparmory/atlassian-jira",
+     "com.mcparmory/atlassian-jira",
+     "io.github.EugeneNeverov/productops-jira",
+     "io.github.EugeneNeverov/productops-jira",
+     "io.github.IamSAL/jira-easy-mcp",
+     "io.github.Kujirafu/agentlore",
+     "io.github.MrRefactoring/atlassian-dc-mcp-jira"
+    ],
+    "vendor_hit": "io.github.Kujirafu/agentlore"
+   }
+  },
+  {
+   "id": 75,
+   "app": "Asana",
+   "pages": [
+    {
+     "url": "https://developers.asana.com/docs/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.asana.com/docs/oauth",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 40230,
+   "checks": {
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "ccess token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon s"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "veloper sandbox Quick start guide FAQ feature guides Authentication Personal access token OAuth OAuth Code Samples / Libraries OAuth scopes OpenID Connect API Input/output options Batch"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication. A user can create many, but not unlimited, personal"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "ld an app with Asana Object hierarchy Common use cases Get started API explorer Developer sandbox Quick start guide FAQ feature guides Authentication Personal access token OAuth OAuth Cod"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "com.supersaasanalytics/analytics"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "omponents on tasks App components on automations UI builder Troubleshooting App component approval checklist Incoming web requests Manage your app Share your app App listing guidelines Pub",
+   "selfserve_cue": "ld an app with Asana Object hierarchy Common use cases Get started API explorer Developer sandbox Quick start guide FAQ feature guides Authentication Personal access token OAuth OAuth Cod",
+   "mcp_registry": {
+    "query": "asana",
+    "hits": [
+     "com.mcparmory/asana",
+     "com.mcparmory/asana",
+     "com.supersaasanalytics/analytics",
+     "io.github.asanabrial/estigia",
+     "io.github.asanabrial/leteo",
+     "io.github.asanabrial/leteo",
+     "io.github.asanabrial/leteo",
+     "io.github.asanabrial/leteo"
+    ],
+    "vendor_hit": "com.supersaasanalytics/analytics"
+   }
+  },
+  {
+   "id": 76,
+   "app": "Monday.com",
+   "pages": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/control-mcp-access-with-oauth-app",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 28000,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "the dependency column AI Skills Build on monday.com with AI Build an external agent Agent API key capabilities mcli - monday.com GraphQL CLI Portfolio Agent Skills Skill: Archive / Delete"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ith the monday MCP server Authenticate with an API token Control MCP access with your own OAuth app Integrating monday MCP with Copilot Studio using a Custom App Integrating monday MCP"
+    },
+    "api:GraphQL": {
+     "status": "confirmed",
+     "evidence": "ata (Platform MCP) Get Sprint Summary (Platform MCP) Execute API Query (Platform MCP) Get GraphQL Schema (Platform MCP) Get Type Details (Platform MCP) Show Table (Platform MCP UI) Show C"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "olio Build monday agents with Make Connect to the Platform Agent over A2A Tools Developer Sandbox Account The Developer Center API analytics dashboard API playground Postman collection Ex"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.firstmonday/jobs"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": "olio Build monday agents with Make Connect to the Platform Agent over A2A Tools Developer Sandbox Account The Developer Center API analytics dashboard API playground Postman collection Ex",
+   "mcp_registry": {
+    "query": "monday",
+    "hits": [
+     "ai.firstmonday/jobs",
+     "ai.firstmonday/jobs",
+     "ai.firstmonday/jobs",
+     "ai.firstmonday/jobs",
+     "ai.waystation/monday",
+     "app.mondaymiracle/fantasy-football",
+     "com.monday/monday.com",
+     "io.github.pipeworx-io/monday"
+    ],
+    "vendor_hit": "ai.firstmonday/jobs"
+   }
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "pages": [
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.clickup.com/reference-link/getaccesstoken",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.clickup.com/reference-link/getauthorizedteams",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 16997,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "h/token \ud83d\udc40 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspac"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ns Common Errors Authentication Authenticate to the ClickUp API using a personal token or OAuth. Authentication To use the ClickUp API, you must authenticate every request. For pers"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ion: OAuth 2.0 Grant Type: Authorization Code . Learn more . Authorization URL: https://app.clickup.com/api Access Token URL: https://api.clickup.com/api/v2/oauth/token \ud83d\udc40 Note ClickUp uses"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "v3 Terminology Rate Limits API availability by Plan Date formatting OpenAPI Specification MCP ClickUp's MCP Server MCP Server Setup Instructions Supported Tools Tasks Tasks Attachment"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "clickup",
+    "hits": [
+     "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+     "com.mcparmory/clickup",
+     "com.mcparmory/clickup",
+     "io.github.KelvinCampelo/clickup-full-mcp",
+     "io.github.KelvinCampelo/clickup-full-mcp",
+     "io.github.KelvinCampelo/clickup-full-mcp",
+     "io.github.KelvinCampelo/clickup-full-mcp",
+     "io.github.KelvinCampelo/clickup-full-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 78,
+   "app": "Coda",
+   "pages": [
+    {
+     "url": "https://coda.io/developers/apis/v1",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 151559,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "will get auto-promoted to Doc Maker upon using this endpoint. Lastly, if in addition, the API key owner matches the \"Auto-join email domains\" setting, they will be auto-added to the works"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Superhuman Developer Terms Terms of Service Introduction The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "cesActivelyUsingAllTime\" \"workspacesWithActiveSubscriptions\" \"workspacesWithSuccessfulTrials\" \"revenueUsd\" Use this parameter to order the Pack analytics returned. direction"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server . It's optimized for LLM usage patterns and often exposes more granular methods fo"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": "cesActivelyUsingAllTime\" \"workspacesWithActiveSubscriptions\" \"workspacesWithSuccessfulTrials\" \"revenueUsd\" Use this parameter to order the Pack analytics returned. direction",
+   "mcp_registry": {
+    "query": "coda",
+    "hits": [
+     "app.codaphone/mcp",
+     "com.codaurl/mcp",
+     "com.iterruptivo.ecodashboard/ecoplaza-mcp",
+     "com.mcparmory/codacy",
+     "com.mcparmory/codacy",
+     "io.github.ChocoData-com/amazon-scraper-api-mcp",
+     "io.github.ajemba/codasms-mcp",
+     "io.github.albertescoda/tennis-control"
+    ],
+    "vendor_hit": "app.codaphone/mcp"
+   }
+  },
+  {
+   "id": 79,
+   "app": "Smartsheet",
+   "pages": [
+    {
+     "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/resource-access-levels",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 11826,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "nnect to VS Code Install MCP server on VS Code The API authenticates using access tokens (API keys). You can generate access tokens in the Smartsheet UI. Important: Smartsheet Gov and S"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "tion? If your scenario involves user consent and interaction, it's typically best to use OAuth with Smartsheet. Note that the Smartsheet implementation of OAuth 2.0 is a 3-legged proce"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "I Introduction Get started Guides Basics Authentication Base URL Dates and times HTTP and REST Pagination Pagination - SDK examples Resource access levels Sheets, rows, columns, and ce"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "Skip to content APIs Smartsheet API Brandfolder API Resource Management API AI & MCP Search Ctrl+K Smartsheet API Introduction Get started Guides Basics Authentication Base U"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "smartsheet",
+    "hits": [
+     "com.solutionsbradshaw/smartsheet-audit",
+     "com.solutionsbradshaw/smartsheet-audit",
+     "io.github.christianclaudio/smartsheet-rm",
+     "io.github.christianclaudio/smartsheet-rm",
+     "io.github.christianclaudio/smartsheet-rm",
+     "io.github.christianclaudio/smartsheet-rm",
+     "io.github.christianclaudio/smartsheet-rm",
+     "io.github.christianclaudio/smartsheet-rm"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 80,
+   "app": "Harvest",
+   "pages": [
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api",
+     "via": "browser"
+    }
+   ],
+   "fetched": true,
+   "chars": 11375,
+   "checks": {
+    "auth:PAT": {
+     "status": "confirmed",
+     "evidence": "Topics Authentication Introduction The V2 API requires an access token to authenticate requests. There are two options available to you: A Personal Access T"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "o you and is the quickest way to start playing around with the API. Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations. Perso"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "nt-Id: $ACCOUNT_ID \" \\ -H \"User-Agent: MyApp ( [email protected] )\" \\ https://api.harvestapp.com/v2/users/me Query string authentication example curl -H \"User-Agent: MyApp ( [email p"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [
+    "basic"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "harvest",
+    "hits": [
+     "com.mapsharvest/maps-harvest",
+     "com.pixharvest/esp32-control",
+     "com.pixharvest/gov-contract-radar",
+     "com.pixharvest/gov-contract-radar",
+     "com.pixharvest/tariff-data",
+     "com.pixharvest/tariff-data",
+     "com.pixharvest/tariff-data",
+     "com.runharvester/mcp"
+    ],
+    "vendor_hit": "com.mapsharvest/maps-harvest"
+   }
+  },
+  {
+   "id": 81,
+   "app": "Stripe",
+   "pages": [
+    {
+     "url": "https://docs.stripe.com/keys",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.stripe.com/keys/restricted-api-keys",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.stripe.com/keys/managed-api-keys",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 39064,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "API keys | Stripe Documentation Skip to content API keys Create account or Sig"
+    },
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "keys page in the Dashboard to create, reveal, expire and rotate keys for the account or sandbox you\u2019re viewing. This guide covers keys used with the Stripe API. To learn about API v2 en"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "app.vercel.stripecheckup/stripecheckup"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "issions. The difference is in governance: agent-tagged keys are automatically subject to approval rules , which require a designated reviewer to approve sensitive actions before they take",
+   "selfserve_cue": "keys page in the Dashboard to create, reveal, expire and rotate keys for the account or sandbox you\u2019re viewing. This guide covers keys used with the Stripe API. To learn about API v2 en",
+   "mcp_registry": {
+    "query": "stripe",
+    "hits": [
+     "app.vercel.stripecheckup/stripecheckup",
+     "com.insightfulpipe/stripe",
+     "com.stripe/mcp",
+     "eu.nordicmcp/stripe",
+     "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+     "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+     "io.github.CSOAI-ORG/stripe-billing-mcp",
+     "io.github.CSOAI-ORG/stripe-billing-mcp"
+    ],
+    "vendor_hit": "app.vercel.stripecheckup/stripecheckup"
+   }
+  },
+  {
+   "id": 82,
+   "app": "Plaid",
+   "pages": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "via": "http"
+    },
+    {
+     "url": "https://plaid.com/docs/api/products/auth/",
+     "via": "http"
+    },
+    {
+     "url": "https://plaid.com/docs/api/oauth/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 92989,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "partners Reseller partners Docs Search or Ask \u00c2 a Question Markdown Plaid.com Log in Get API Keys Open nav Close search modal Search the docs Ask Bill! Ask a question... Hi! I'm Bill! You"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "API status and incidents are also available programmatically via the following endpoints: https://status.plaid.com/api/v2/status.json for current status https://status.plaid.com/api/v2/incidents.json for cu"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Statements Income Instant Onboarding Plaid Layer Fundamentals Items Accounts Institutions Sandbox Link Users Consent OAuth Partnerships Processor tokens Processor partners Reseller partne"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "e: Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fu"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": "orization as either a personal or a business account. This field is currently in beta; to request access, contact your account manager. Coverage varies by institution, with approximately 70% of",
+   "selfserve_cue": "Statements Income Instant Onboarding Plaid Layer Fundamentals Items Accounts Institutions Sandbox Link Users Consent OAuth Partnerships Processor tokens Processor partners Reseller partne",
+   "mcp_registry": {
+    "query": "plaid",
+    "hits": [
+     "io.github.mrfentmen/plaid-mcp",
+     "io.github.pipeworx-io/plaid",
+     "io.github.pipeworx-io/plaid",
+     "io.github.pipeworx-io/plaid",
+     "io.github.pipeworx-io/plaid",
+     "io.github.pipeworx-io/plaid",
+     "io.github.pipeworx-io/plaid"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 83,
+   "app": "Binance",
+   "pages": [
+    {
+     "url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:HMAC signature": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:WebSocket": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "binance",
+    "hits": [
+     "io.github.Alejandrehl/kainext-binance-mcp",
+     "io.github.Evozim/binance-orderbook-mcp",
+     "io.github.KumailQazi/krmaazha-binance-mcp",
+     "io.github.junct-bot/binance-mcp",
+     "io.github.junct-bot/binance-mcp",
+     "io.github.junct-bot/binance-mcp",
+     "io.github.mrfentmen/binance-market-mcp",
+     "io.github.mrfentmen/binance-market-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 84,
+   "app": "Paygent Connect",
+   "pages": [
+    {
+     "url": "https://docs.nmi.com/",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists ai.paygenthq/paygent"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "paygent",
+    "hits": [
+     "ai.paygenthq/paygent",
+     "com.obsmetrics.paygent/agents",
+     "io.github.discover-dmc/paygentic",
+     "io.github.djautomd-lab/aipaygent",
+     "io.github.djautomd-lab/aipaygent"
+    ],
+    "vendor_hit": "ai.paygenthq/paygent"
+   }
+  },
+  {
+   "id": 85,
+   "app": "iPayX",
+   "pages": [
+    {
+     "url": "https://ipayx.ai/docs",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.github.Ipayx-stellar/fx-audit"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "ipayx",
+    "hits": [
+     "io.github.Ipayx-stellar/fx-audit",
+     "io.github.iPAYX-Technologies/mcp-fx-audit",
+     "io.github.iPAYX-Technologies/mcp-fx-audit",
+     "io.github.iPAYX-Technologies/mcp-fx-audit"
+    ],
+    "vendor_hit": "io.github.Ipayx-stellar/fx-audit"
+   }
+  },
+  {
+   "id": 86,
+   "app": "QuickBooks",
+   "pages": [
+    {
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "no-evidence",
+     "evidence": null
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "quickbooks",
+    "hits": [
+     "ai.logistify/quickbooks-desktop",
+     "ai.ototo/quickbooks",
+     "com.caribooks/quickbooks",
+     "com.caribooks/quickbooks",
+     "com.caribooks/quickbooks",
+     "com.caribooks/quickbooks",
+     "com.devart/mcp-quickbooks",
+     "com.kipper/quickbooks"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "pages": [
+    {
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.github.Xerolo44/rpgmaker-mv-mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "xero",
+    "hits": [
+     "com.getboxkite/xero-backup-export",
+     "com.getboxkite/xero-backup-export",
+     "com.kipper/xero",
+     "com.pilot.meridian/xero-connector",
+     "io.github.Servosity/xero-mcp",
+     "io.github.Servosity/xero-mcp",
+     "io.github.Servosity/xero-mcp",
+     "io.github.Servosity/xero-mcp"
+    ],
+    "vendor_hit": "io.github.Xerolo44/rpgmaker-mv-mcp"
+   }
+  },
+  {
+   "id": 88,
+   "app": "Brex",
+   "pages": [
+    {
+     "url": "https://developer.brex.com/docs/authentication/",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.brex.com/guides/quickstart",
+     "via": "http"
+    },
+    {
+     "url": "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+     "via": "failed"
+    }
+   ],
+   "fetched": true,
+   "chars": 6055,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "Brex APIs, add it as a header to your API calls in the following format: Authorization: \"Bearer {{your user_token here}}\" If, for example, your user token value is bxt_jBWQLZXtu1f4sVT6"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "header Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE> and make a GET request to https://api.brex.com/v2/users/me with your language/tool of choice. Below are a few examples in different implem"
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists io.github.PalabreX/runpay"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "brex",
+    "hits": [
+     "io.github.PalabreX/runpay",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp",
+     "io.github.shuji-bonji/s1000d-brex-mcp"
+    ],
+    "vendor_hit": "io.github.PalabreX/runpay"
+   }
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "pages": [
+    {
+     "url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.adramp/google-ads"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "ramp",
+    "hits": [
+     "ai.adramp/google-ads",
+     "ai.adramp/google-ads",
+     "ai.adramp/google-ads",
+     "ai.adramp/google-ads",
+     "com.mcparmory/ramp",
+     "com.mcparmory/ramp",
+     "com.mcparmory/ramp",
+     "com.mudko/onramperx"
+    ],
+    "vendor_hit": "ai.adramp/google-ads"
+   }
+  },
+  {
+   "id": 90,
+   "app": "PitchBook",
+   "pages": [
+    {
+     "url": "https://pitchbook.com/data/api",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "pitchbook",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 91,
+   "app": "NotebookLM",
+   "pages": [
+    {
+     "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "via": "http"
+    },
+    {
+     "url": "https://cloud.google.com/docs/access-resources",
+     "via": "http"
+    },
+    {
+     "url": "https://cloud.google.com/sdk/gcloud/reference/auth/login",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 70407,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "no-launch-browser 2. Copy the long URL that begins with https://accounts.google.com/o/oauth2/auth.. . 3. Paste this URL into the browser of a different, trusted machine that has"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "oken generates an access token for your user account. The projects.locations.notebooks REST API methods on this page require an authenticated user account with an active Gemini Not"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Contact sales Support Commun"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "Contact sales Support Commun",
+   "selfserve_cue": "w Monitor and optimize costs Cloud Billing App Optimize API Free cloud features and trial offer Manage resources and usage Cloud Quotas Sustainability Carbon Footprint",
+   "mcp_registry": {
+    "query": "notebooklm",
+    "hits": [
+     "dev.cotlet/notebooklm",
+     "dev.cotlet/notebooklm",
+     "dev.cotlet/notebooklm",
+     "io.github.Pantheon-Security/notebooklm-mcp-secure",
+     "io.github.Pantheon-Security/notebooklm-mcp-secure",
+     "io.github.Pantheon-Security/notebooklm-mcp-secure",
+     "io.github.mcp-dir/notebooklm-mcp",
+     "io.github.roomi-fields/notebooklm-mcp"
+    ],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 92,
+   "app": "Otter AI",
+   "pages": [
+    {
+     "url": "https://help.otter.ai/",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:OAuth2": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:MCP": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.painspotter/painspotter"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "otter",
+    "hits": [
+     "ai.painspotter/painspotter",
+     "ai.seaotter/otterscore",
+     "ai.seaotter/otterscore",
+     "ai.seaotter/otterscore",
+     "ai.seaotter/otterscore",
+     "ai.seaotter/otterscore",
+     "com.allyotter/allyotter-lite",
+     "com.allyotter/allyotter-lite"
+    ],
+    "vendor_hit": "ai.painspotter/painspotter"
+   }
+  },
+  {
+   "id": 93,
+   "app": "Fathom",
+   "pages": [
+    {
+     "url": "https://developers.fathom.ai/",
+     "via": "failed"
+    }
+   ],
+   "fetched": false,
+   "chars": 0,
+   "checks": {
+    "auth:API key": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "registry: no vendor server"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "fathom",
+    "hits": [
+     "ai.fathom.api/mcp",
+     "ai.qompass/fathom",
+     "ai.qompass/fathom",
+     "ai.qompass/fathom",
+     "dev.cotlet/fathom-video",
+     "dev.cotlet/fathom-video",
+     "dev.cotlet/fathom-video",
+     "dev.fly.fathom-lab-door/fathom"
+    ],
+    "vendor_hit": "ai.fathom.api/mcp"
+   }
+  },
+  {
+   "id": 94,
+   "app": "Consensus",
+   "pages": [
+    {
+     "url": "https://consensus.app/home/api/",
+     "via": "http"
+    },
+    {
+     "url": "https://consensus.app/pricing/",
+     "via": "failed"
+    }
+   ],
+   "fetched": true,
+   "chars": 18698,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "one API call away. Bring up-to-date, peer-reviewed citations into your workflows. Create API key Read the docs How Phylo powers drug discovery with Consensus \u00e2\u0086\u0092 Peer-reviewed research,"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists com.consensus-analytics/mcp"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "consensus",
+    "hits": [
+     "com.consensus-analytics/mcp",
+     "com.ryecentral/consensus",
+     "com.ryecentral/consensus",
+     "com.tinab/consensus",
+     "io.github.Evozim/consensus-voter-mcp",
+     "io.github.MICONNM/openclaw-consensus-mcp",
+     "io.github.TheStevenJohnstone/ai-consensus",
+     "io.github.TheStevenJohnstone/ai-consensus"
+    ],
+    "vendor_hit": "com.consensus-analytics/mcp"
+   }
+  },
+  {
+   "id": 95,
+   "app": "Reducto",
+   "pages": [
+    {
+     "url": "https://docs.reducto.ai/",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.reducto.ai/quickstart",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.reducto.ai/studio-quickstart",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 23486,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "with Reducto in 5 minutes. Overview Prerequisites \u00e2\u0080\u0083Create a Reducto account \u00e2\u0080\u0083Get your API key \u00e2\u0080\u0083Set your API key as an environment variable \u00e2\u0080\u0083Install the SDK What we\u00e2\u0080\u0099re going to p"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "to API For developers building automated pipelines. Available in Python, Node.js, Go, and REST, with Studio for visual pipeline building. /parse /extract /split /classify /edit API Qui"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "it What\u00e2\u0080\u0099s next Troubleshooting Prerequisites 1 Create a Reducto account Sign up for a free account without leaving the docs. Signed in as Create account Sign in 2 Get your API key Creat"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "Overview API quickstart Studio quickstart Agent guide Developer tools Reducto CLI Reducto MCP server Core functions Upload Overview Uploading large files Parse Overview Parse r-1, r-1"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": "it What\u00e2\u0080\u0099s next Troubleshooting Prerequisites 1 Create a Reducto account Sign up for a free account without leaving the docs. Signed in as Create account Sign in 2 Get your API key Creat",
+   "mcp_registry": {
+    "query": "reducto",
+    "hits": [],
+    "vendor_hit": null
+   }
+  },
+  {
+   "id": 96,
+   "app": "Devin",
+   "pages": [
+    {
+     "url": "https://docs.devin.ai/api-reference/overview",
+     "via": "browser"
+    },
+    {
+     "url": "https://docs.devin.ai/enterprise/getting-started/get-started",
+     "via": "http"
+    },
+    {
+     "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 20664,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "mbership (Organization) [Beta] Roles (Enterprise) Service Users (Enterprise) Service User API Keys (Enterprise) [Beta] IDP Groups (Enterprise) IDP Group Registration (Enterprise) Personal"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "Overview Copy page Copy page Learn how to programmatically interact with Devin using our REST APIs Copy page Copy page The Devin API enables you to integrate Devin into your applicati"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "Create a service user and make your first API call in minutes. Enterprise quick start For enterprise customers with RBAC, multi-org support, and advanced permissions. Which path should I choose? Mo"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "io.devinbox/devinbox"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "Create a service user and make your first API call in minutes. Enterprise quick start For enterprise customers with RBAC, multi-org support, and advanced permissions. Which path should I choose? Mo",
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "devin",
+    "hits": [
+     "io.devinbox/devinbox",
+     "io.github.AzalHoseinian/devinsight-mcp",
+     "io.github.AzalHoseinian/devinsight-mcp",
+     "io.github.DevInder1/tridentchain-security",
+     "io.github.DevInder1/tridentchain-security",
+     "io.github.DevInder1/tridentchain-security",
+     "io.github.DevInder1/tridentchain-security",
+     "io.github.DevinoSolutions/upapi-mcp"
+    ],
+    "vendor_hit": "io.devinbox/devinbox"
+   }
+  },
+  {
+   "id": 97,
+   "app": "higgsfield",
+   "pages": [
+    {
+     "url": "https://higgsfield.ai/cli",
+     "via": "http"
+    },
+    {
+     "url": "https://higgsfield.ai/pricing",
+     "via": "failed"
+    }
+   ],
+   "fetched": true,
+   "chars": 8761,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "can generate from text prompts, reference images, or a combination of both. Do I need an API key? No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through"
+    },
+    "api:CLI": {
+     "status": "confirmed",
+     "evidence": "Higgsfield CLI | AI Image & Video Generation for Any Agent Higgsfield Explore Image Video Audio MCP API"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists app.higgsfield.agentwares/marketplace"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "higgsfield",
+    "hits": [
+     "app.higgsfield.agentwares/marketplace",
+     "app.higgsfield.mizan-bazar/mizan"
+    ],
+    "vendor_hit": "app.higgsfield.agentwares/marketplace"
+   }
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "pages": [
+    {
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "via": "http"
+    },
+    {
+     "url": "https://github.com/pricing",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 31735,
+   "checks": {
+    "auth:None": {
+     "status": "confirmed",
+     "evidence": null
+    },
+    "api:CLI": {
+     "status": "confirmed",
+     "evidence": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library \u00b7 GitHub"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "local tool, no credentials"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "s Developers Developer API Education GitHub CLI GitHub Desktop GitHub Mobile Integrations MCP Registry Training Build with Copilot Support Docs Community Forum Professional Services P"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": "ed development, governed at enterprise scale $ 21 USD per user / month Start a free trial Contact Sales GitHub Enterprise now includes access to GitHub Copilot. Learn more Everything from Team",
+   "selfserve_cue": "aid-cli can be installed with brew. brew install mermaid-cli Known issues Linux sandbox issue Docker permission denied issue How to setup up mermaid to use already installed",
+   "mcp_registry": {
+    "query": "mermaid",
+    "hits": [
+     "ai.smithery/hustcc-mcp-mermaid",
+     "com.mermaidchart/mermaid-mcp",
+     "io.github.adewale/agentic-mermaid",
+     "io.github.adewale/agentic-mermaid",
+     "io.github.adewale/agentic-mermaid",
+     "io.github.adewale/agentic-mermaid",
+     "io.github.adewale/agentic-mermaid",
+     "io.github.adewale/agentic-mermaid"
+    ],
+    "vendor_hit": "com.mermaidchart/mermaid-mcp"
+   }
+  },
+  {
+   "id": 99,
+   "app": "YouTube Transcript",
+   "pages": [
+    {
+     "url": "https://transcriptapi.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://transcriptapi.com/docs/getting-started/python/",
+     "via": "http"
+    },
+    {
+     "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 43060,
+   "checks": {
+    "auth:API key": {
+     "status": "confirmed",
+     "evidence": "Playlists | TranscriptAPI TranscriptAPI.com Docs Pricing Blog Contact Login Get API Key YouTube Transcript API That Just Works Stop fighting YouTube blocks. Get transcripts, sea"
+    },
+    "api:REST": {
+     "status": "confirmed",
+     "evidence": "ouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP \u2014 at scale. Get Started Free View Pricing Works everywhere Powering 15"
+    },
+    "access": {
+     "status": "confirmed",
+     "evidence": "nscriptAPI account and gets an API key on first use \u2014 no manual setup needed. You get 100 free credits to start. Works with View on GitHub \u00b7 Install on ClawHub Pricing One Plan. Every Featur"
+    },
+    "mcp": {
+     "status": "confirmed",
+     "evidence": "ai.youtube-transcript/youtube-transcript"
+    }
+   },
+   "possibly_missed_auth": [
+    "oauth2"
+   ],
+   "gated_cue": null,
+   "selfserve_cue": "nscriptAPI account and gets an API key on first use \u2014 no manual setup needed. You get 100 free credits to start. Works with View on GitHub \u00b7 Install on ClawHub Pricing One Plan. Every Featur",
+   "mcp_registry": {
+    "query": "youtube",
+    "hits": [
+     "ai.agentapigate/youtube-transcript-video-subtitles-search-mcp",
+     "ai.agentapihub/youtube-transcript-video-subtitles-search-mcp",
+     "ai.livecore/video-editor-ai-video-editing-edit-video-captions-subtitles-srt-transcribe-transcription-tiktok-youtube-shorts-instagram-reels-podcast-multicam-interview-viral-clips-highlight",
+     "ai.smithery/kirbah-mcp-youtube",
+     "ai.trendsapi/youtube",
+     "ai.trendsapi/youtube",
+     "ai.trendsapi/youtube",
+     "ai.trendsmcp/youtube"
+    ],
+    "vendor_hit": "ai.youtube-transcript/youtube-transcript"
+   }
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "pages": [
+    {
+     "url": "https://developers.grain.com/",
+     "via": "http"
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "via": "http"
+    }
+   ],
+   "fetched": true,
+   "chars": 7615,
+   "checks": {
+    "auth:API token": {
+     "status": "confirmed",
+     "evidence": "ads, and more. This page gets you from zero to your first successful request! 1. Create a Personal Access Token A Personal Access Token (PAT) authenticates requests as you, with the same access you hav"
+    },
+    "auth:OAuth2": {
+     "status": "confirmed",
+     "evidence": "ually from the integrations page . Doesn't expire, and can be revoked at any time. OAuth Token personal , workspace Issued through the OAuth2 Flow . Expires, must be refresh"
+    },
+    "api:REST": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "access": {
+     "status": "no-evidence",
+     "evidence": null
+    },
+    "mcp": {
+     "status": "contradicted",
+     "evidence": "registry lists com.grain64.billtrim/billtrim"
+    }
+   },
+   "possibly_missed_auth": [],
+   "gated_cue": null,
+   "selfserve_cue": null,
+   "mcp_registry": {
+    "query": "grain",
+    "hits": [
+     "com.grain64.billtrim/billtrim",
+     "com.grain64.clearbar/verdicts",
+     "com.grain64.deskhand/deskhand",
+     "com.grain64.deskhand/deskhand",
+     "com.grain64.deskhand/deskhand",
+     "com.grain64.deskhand/deskhand",
+     "com.grain64.deskhand/deskhand",
+     "com.grain64.friction/friction"
+    ],
+    "vendor_hit": "com.grain64.billtrim/billtrim"
+   }
+  }
+ ]
+}

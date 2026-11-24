@@ -1,0 +1,42 @@
+id|field|new|evidence|why
+8|auth|API key;Basic;OAuth2|https://developer.close.com/topics/authentication/|Agent saw HTTP Basic on the auth page; Close sends the API key as the Basic username
+10|mcp|official|https://api.docs.dealcloud.com/|Docs nav has an "MCP Getting Started" section; pass 1 said none
+16|mcp|official|https://www.liveagent.com/api/|Pricing lists "AI agents, MCP" on the Business plan; pass 1 said none
+25|mcp|official|https://pumble.com/help/integrations/|Help centre article "How to use the Pumble MCP server"; pass 1 said none
+25|verdict|ready|https://pumble.com/help/integrations/|Official MCP makes it agent-callable today
+25|blocker||https://pumble.com/help/integrations/|Blocker removed once the MCP was found
+30|mcp|official|https://registry.modelcontextprotocol.io/v0/servers?search=vonage|Official MCP Registry lists io.github.Vonage/vonage-documentation-mcp
+35|auth|API key;Basic;OAuth2|https://mailchimp.com/developer/marketing/docs/fundamentals/|API key can be sent with HTTP Basic auth
+44|mcp|official|https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html|Scope list includes sfcc.shopper-mcpagent (B2C Commerce MCP)
+46|mcp|official|https://developers.squarespace.com/commerce-apis/authentication-and-permissions|Developer platform nav lists an MCP section
+48|mcp|official|https://gumroad.com/api|Site footer links "Gumroad MCP"
+50|mcp|official|https://fanbasis.com/|Homepage advertises "MCP beta"
+50|verdict|friction|https://fanbasis.com/|MCP beta exists, so not fully blocked
+50|blocker|No public API docs found; APIs/SDKs pitched to Enterprise; MCP is beta|https://fanbasis.com/|Rewritten after evidence
+54|mcp|official|https://registry.modelcontextprotocol.io/v0/servers?search=mrscraper|Registry lists io.github.mrscraper-com/mrscraper-mcp (vendor org)
+60|mcp|official|https://www.clay.com/|Site advertises an MCP and "install directly ... in your coding agent"
+60|verdict|friction|https://www.clay.com/|MCP exists; still no general REST API
+60|blocker|No general public REST API; MCP + webhooks only|https://www.clay.com/|Rewritten after evidence
+69|auth|API key;Application key;OAuth2|https://docs.datadoghq.com/api/latest/authentication/|Auth page also documents OAuth2 for integrations
+72|mcp|official|https://registry.modelcontextprotocol.io/v0/servers?search=airtable|Registry lists com.airtable/mcp
+93|auth|API key;OAuth2|https://developers.fathom.ai/llms.txt|llms.txt lists "Building with OAuth" alongside API keys
+93|mcp|official|https://developers.fathom.ai/llms.txt|llms.txt lists official MCP docs; registry has ai.fathom.api/mcp
+94|access|free|https://consensus.app/home/api/|API page has a self-serve "Create API key" button; pass 1 said contact-sales
+94|mcp|official|https://consensus.app/home/api/|API page shows an mcp.json for mcp.consensus.app
+94|verdict|ready|https://consensus.app/home/api/|Self-serve key + official MCP
+94|blocker||https://consensus.app/home/api/|Blocker removed
+97|api|CLI;MCP|https://higgsfield.ai/cli|Ships a CLI and an MCP for agents
+97|mcp|official|https://higgsfield.ai/cli|"Higgsfield uses MCP (Model Context Protocol)"
+100|mcp|official|https://developers.grain.com/|Developer site has "MCP Docs"
+100|auth|PAT;OAuth2|https://developers.grain.com/|Example uses Authorization: Bearer grain_pat_...
+23|mcp|official|https://www.zoho.com/cliq/help/restapi/v2/|Zoho's suite-wide MCP server (agent v2 snippet); covers Cliq among Zoho apps
+37|mcp|official|https://developer.systeme.io/|Developer docs have a "Guides: MCP Server" section
+84|mcp|official|https://docs.nmi.com/|NMI hosts an MCP server for AI coding assistants (docs/integration help, not merchant data)
+88|mcp|official|https://developer.brex.com/docs/mcp.md|Developer docs index lists "Brex MCP"
+14|mcp|official|https://dev.frontapp.com/docs/authentication|Docs nav lists "Front AI MCP Server" and "Admin MCP Server" (found in hand-check sample)
+32|mcp|official|https://developers.facebook.com/docs/marketing-api/get-started/authorization|Docs nav lists "Ads MCP Server Overview" (found in hand-check sample)
+79|mcp|official|https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication|Docs have an "AI & MCP" section and "Install MCP server on VS Code" (found in hand-check sample)
+5|mcp|official|https://twenty.com/developers|Developer page: agents read/write CRM data through Twenty's MCP server
+15|mcp|official|https://docs.usepylon.com/pylon-docs/developer/api/authentication|Docs nav has a "Pylon MCP" page (I marked this wrong in the hand-check too)
+78|mcp|official|https://coda.io/developers/apis/v1|Docs point to the Superhuman Docs (Coda) MCP server
+95|mcp|official|https://docs.reducto.ai/|Docs nav lists "Reducto MCP server" and a CLI

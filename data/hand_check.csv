@@ -1,0 +1,31 @@
+sample|id|app|fields_checked|pass1_wrong|pass2_wrong|final_wrong|note
+A|1|Salesforce|auth;access;mcp;verdict||||MCP not on fetched page; reviewer knowledge (Salesforce hosted MCP) - lower confidence
+A|2|HubSpot|auth;access;mcp;verdict||||Docs nav: "MCP server"
+A|14|Front|auth;access;mcp;verdict|mcp|mcp||Nav lists Front AI MCP Server / Admin MCP Server
+A|15|Pylon|auth;access;mcp;verdict|mcp|mcp||Reviewer first said none; agent v3 found "Pylon MCP" page - reviewer was wrong too
+A|23|Zoho Cliq|auth;access;mcp;verdict|mcp|||Zoho suite MCP
+A|24|Lark (Larksuite)|auth;access;mcp;verdict||||OAuth 2.0 user_access_token on docs
+A|32|Meta Ads|auth;access;mcp;verdict|mcp|mcp||Nav lists "Ads MCP Server"
+A|39|Threads (Meta)|auth;access;mcp;verdict||||Permissions need App Review
+A|42|WooCommerce|auth;access;mcp;verdict||||Basic over HTTPS, OAuth 1.0a over HTTP
+A|47|Ecwid|-||||Excluded: docs page too thin to verify (JS-rendered) - counted as unverified
+A|51|DataForSEO|auth;access;mcp;verdict||||Basic auth with API login/password
+A|60|Clay|auth;access;mcp;verdict|mcp;verdict|||Site advertises MCP; still no general REST API
+A|62|Vercel|auth;access;mcp;verdict||||Vercel MCP (OAuth)
+A|64|Cloudflare|auth;access;mcp;verdict||||Registry com.cloudflare.mcp/mcp
+A|74|Jira|auth;access;mcp;verdict||||Basic with email + API token; OAuth 2.0 3LO
+A|79|Smartsheet|auth;access;mcp;verdict|mcp|mcp||Docs "AI & MCP" section
+A|81|Stripe|auth;access;mcp;verdict||||Registry com.stripe/mcp; sandbox keys
+A|90|PitchBook|-||||Excluded: site blocks automated fetches (403) - counted as unverified
+A|94|Consensus|auth;access;mcp;verdict|access;mcp;verdict|||Self-serve "Create API key" + mcp.json
+A|99|YouTube Transcript|auth;access;mcp;verdict||||100 free credits; REST or MCP
+B|9|Copper|auth;access;mcp;verdict||||Holdout. MCP=none is absence-of-evidence - lower confidence
+B|10|DealCloud|auth;access;mcp;verdict||||Holdout. OAuth2 bearer token page; "MCP Getting Started"
+B|12|Intercom|auth;access;mcp;verdict||||Holdout. Agent's access flag was noise (App Store review text)
+B|17|Plain|auth;access;mcp;verdict||||Holdout. Machine-user API key; registry com.plain/mcp
+B|26|Discord|auth;access;mcp;verdict||||Holdout
+B|53|Ahrefs|auth;access;mcp;verdict||||Holdout. Registry com.ahrefs/mcp; Enterprise gating not on fetched page - lower confidence
+B|58|Sherlock|auth;access;mcp;verdict||||Holdout. Agent MCP flag was noise (GitHub page footer)
+B|65|Supabase|auth;access;mcp;verdict||||Holdout
+B|82|Plaid|auth;access;mcp;verdict||||Holdout
+B|86|QuickBooks|auth;access;mcp;verdict||||Holdout. Intuit MCP connector page

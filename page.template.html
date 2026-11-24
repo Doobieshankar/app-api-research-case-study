@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 Apps, Agent-Ready?</title>
+<meta name="description" content="Case study: an agent researched sign-in, access, API surface and MCP for 100 apps, and we checked its accuracy by hand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · shape: Long Document · genre: editorial · theme: Almanac (deal 1/3, seed data-case-study-report-c1e0·ae86da47·2026-11-24·r0) · job: read the finding and open the table · draw: manual
+ * hero: Stage, head left, verdict ledger right · nav: edge-aligned wordmark and four anchors · footer: colophon with run commands · imagery: none, the data is the picture · signature: the verdict ledger sheet in the hero
+ * axes: mid/grotesk-sans/chromatic-magenta · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: word count, a report has to explain itself to non-technical readers, so prose is split into short ruled entries */
+/* waive 58: the brief requires a self-explanatory report with no narration; each screen stays one idea but runs above 80 words */
+{{CSS_SCAFFOLD}}
+body { color: var(--color-ink-2); }
+h1, h2, h3 { color: var(--color-ink); }
+.num { font-family: var(--font-outlier); font-variant-numeric: tabular-nums; text-align: right; }
+a { color: var(--color-ink); text-decoration-color: var(--color-accent); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; transition: none; }
+
+.nav { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-lg); padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); flex-wrap: wrap; }
+.wordmark { font: 600 var(--text-lg)/1 var(--font-display); color: var(--color-ink); text-decoration: none; letter-spacing: var(--tracking-display); }
+.nav ul { display: flex; gap: var(--space-lg); list-style: none; margin: 0; padding: 0; flex-wrap: wrap; font-size: var(--text-sm); }
+
+.hero { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-2xl); align-items: center; padding-block: var(--space-3xl) var(--space-2xl); }
+.hero h1 { letter-spacing: -0.035em; line-height: 0.95; }
+.hero .lead { margin-top: var(--space-lg); }
+.actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-xl); }
+.btn { display: inline-block; border: var(--rule-hair) solid var(--color-ink); border-radius: var(--radius-pill); padding: var(--space-sm) var(--space-lg); font: 500 var(--text-sm)/1 var(--font-display); color: var(--color-ink); background: transparent; text-decoration: none; transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out); }
+.btn:hover { background: var(--color-paper-2); }
+.btn:active { background: var(--color-paper-3); }
+.btn--primary { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); }
+.btn--primary:hover { background: var(--color-accent-2); }
+.btn--primary:active { background: var(--color-ink); border-color: var(--color-ink); }
+
+.sheet { background: var(--color-sheet); border-top: var(--rule-bar) solid var(--color-ink); padding: var(--space-lg); }
+.sheet-head { display: flex; justify-content: space-between; gap: var(--space-md); font-size: var(--text-sm); color: var(--color-muted); padding-bottom: var(--space-sm); border-bottom: var(--rule-bar) solid var(--color-rule-2); }
+.ledger { list-style: none; margin: 0; padding: 0; }
+.ledger li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: var(--space-md); padding-block: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.ledger b { font: 600 var(--text-title)/1.1 var(--font-display); color: var(--color-ink); display: block; }
+.ledger span { font-size: var(--text-sm); color: var(--color-muted); }
+.ledger .num { font-size: var(--text-display-s); font-weight: 500; letter-spacing: -0.04em; color: var(--color-ink); line-height: 1; font-variant-numeric: tabular-nums; }
+.ledger .hit .num { color: var(--color-accent); }
+.caption { font-size: var(--text-sm); color: var(--color-muted); margin-top: var(--space-sm); }
+
+section { padding-block: var(--space-2xl); border-top: var(--rule-bar) solid var(--color-rule-2); }
+section > h2 { margin-bottom: var(--space-sm); }
+section > .lead { margin-bottom: var(--space-xl); }
+
+.terms { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--gap-columns); margin: 0; }
+.terms div { border-top: var(--rule-hair) solid var(--color-rule-2); padding-top: var(--space-sm); }
+.terms dt { font: 600 var(--text-lg)/1.2 var(--font-display); color: var(--color-ink); }
+.terms dd { margin: var(--space-xs) 0 0; font-size: var(--text-sm); }
+
+.findings { list-style: none; margin: 0; padding: 0; counter-reset: f; }
+.findings li { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 5fr) minmax(0, 5fr); gap: var(--gap-columns); padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); align-items: baseline; }
+.findings .num { text-align: left; font-size: var(--text-2xl); font-weight: 500; color: var(--color-ink); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.findings h3 { font-size: var(--text-title); }
+
+.bars { list-style: none; margin: var(--space-xl) 0 0; padding: 0; }
+.bars li { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gap-columns); align-items: center; padding-block: var(--space-2xs); }
+.bar-name { font-size: var(--text-sm); }
+.bar { display: flex; height: 28px; }
+.seg { display: flex; align-items: center; padding-inline: var(--space-xs); font: 500 var(--text-xs)/1 var(--font-outlier); min-width: 0; }
+.seg-ready { background: var(--color-accent); color: var(--color-accent-ink); }
+.seg-friction { background: var(--color-paper-3); color: var(--color-ink); }
+.seg-blocked { background: var(--color-ink); color: var(--color-paper); }
+.key { display: flex; gap: var(--space-lg); flex-wrap: wrap; font-size: var(--text-sm); margin-top: var(--space-md); }
+.key span::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: var(--space-xs); vertical-align: -1px; }
+.key .k-ready::before { background: var(--color-accent); } .key .k-friction::before { background: var(--color-paper-3); outline: var(--rule-hair) solid var(--color-rule-2); } .key .k-blocked::before { background: var(--color-ink); }
+
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-2xl); }
+.split h3 { margin-bottom: var(--space-xs); }
+.split p + h3, .split p + table, .split table + p { margin-top: var(--space-lg); }
+
+table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+thead th { border-bottom: var(--rule-bar) solid var(--color-rule-2); }
+th { font: 500 var(--text-sm)/1.3 var(--font-body); color: var(--color-muted); text-align: left; padding: var(--space-xs) var(--space-sm) var(--space-xs) 0; vertical-align: bottom; }
+td, tbody th { border-top: var(--rule-hair) solid var(--color-rule); padding: var(--space-xs) var(--space-sm) var(--space-xs) 0; vertical-align: top; text-align: left; }
+tbody th { color: var(--color-ink); font-weight: 500; }
+.what { display: block; color: var(--color-muted); font-weight: 400; font-size: var(--text-xs); }
+.scroll { overflow-x: auto; }
+.big-table { min-width: 1180px; }
+.scroll--tall { max-height: 70vh; overflow-y: auto; }
+.scroll--tall thead th { position: sticky; top: 0; background: var(--color-sheet); z-index: var(--z-raised); }
+.big-table tbody tr:hover { background: var(--color-paper-2); }
+.v { display: inline-block; padding: var(--space-3xs) var(--space-xs); border-radius: var(--radius-pill); white-space: nowrap; font-family: var(--font-display); font-weight: 500; }
+.v-ready { background: var(--color-accent); color: var(--color-accent-ink); }
+.v-friction { background: var(--color-paper-3); color: var(--color-ink); }
+.v-blocked { background: var(--color-ink); color: var(--color-paper); }
+
+.filters { display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: end; margin-bottom: var(--space-md); }
+.filters label { display: grid; gap: var(--space-2xs); font-size: var(--text-sm); color: var(--color-muted); }
+.filters select, .filters input { border: var(--rule-hair) solid var(--color-muted); border-radius: var(--radius-pill); background: var(--color-sheet); color: var(--color-ink); padding: var(--space-xs) var(--space-sm); min-width: 200px; }
+.filters select:hover, .filters input:hover { border-color: var(--color-ink); }
+.filters select:disabled, .filters input:disabled { background: var(--color-paper-3); color: var(--color-muted); border-color: var(--color-rule); cursor: not-allowed; }
+#count { font-family: var(--font-outlier); font-size: var(--text-sm); }
+
+.band--ink { background: var(--color-ink); color: var(--color-paper); border-top: 0; }
+.band--ink h2, .band--ink h3 { color: var(--color-sheet); }
+.band--ink a { color: var(--color-sheet); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-xl) var(--gap-columns); }
+.steps li { border-top: var(--rule-hair) solid var(--color-muted); padding-top: var(--space-sm); }
+.steps .num { text-align: left; color: var(--color-accent-ink); font-size: var(--text-sm); display: block; margin-bottom: var(--space-xs); }
+.steps p { font-size: var(--text-sm); margin-top: var(--space-xs); }
+.human { margin-top: var(--space-2xl); display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--gap-columns); }
+.human ul { margin: 0; padding-left: var(--space-lg); }
+.human li + li { margin-top: var(--space-xs); }
+pre { font: 400 var(--text-xs)/1.6 var(--font-outlier); color: var(--color-sheet); border-top: var(--rule-hair) solid var(--color-muted); padding-top: var(--space-md); margin: var(--space-xl) 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+pre b { color: var(--color-paper-3); font-weight: 500; }
+
+.acc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap-columns); margin-bottom: var(--space-2xl); }
+.acc div { border-top: var(--rule-bar) solid var(--color-rule-2); padding-top: var(--space-sm); }
+.acc .num { display: block; text-align: left; font-size: var(--text-display-s); font-weight: 500; letter-spacing: -0.04em; color: var(--color-ink); line-height: 1.05; font-variant-numeric: tabular-nums; }
+.acc .hit .num { color: var(--color-accent); }
+.acc p { font-size: var(--text-sm); margin-top: var(--space-xs); }
+.limits { margin: 0; padding-left: var(--space-lg); }
+.limits li + li { margin-top: var(--space-xs); }
+details { margin-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule); padding-top: var(--space-md); }
+summary { cursor: pointer; font: 500 var(--text-md)/1.4 var(--font-display); color: var(--color-ink); }
+summary:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+details[open] summary { margin-bottom: var(--space-md); }
+.mt { margin-top: var(--space-2xl); }
+
+footer { border-top: var(--rule-bar) solid var(--color-rule-2); padding-block: var(--space-2xl); font-size: var(--text-sm); }
+footer .split { gap: var(--space-xl); }
+footer code { font-family: var(--font-outlier); font-size: var(--text-xs); background: var(--color-paper-2); padding: var(--space-3xs) var(--space-2xs); }
+
+@media (max-width: 60rem) {
+  .hero, .split, .human { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
+  .terms { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps, .acc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .findings li { grid-template-columns: minmax(0, 1fr); gap: var(--space-xs); }
+  .bars li { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xs); }
+}
+@media (max-width: 40rem) { .terms, .steps, .acc { grid-template-columns: minmax(0, 1fr); } .filters select, .filters input { min-width: 0; width: 100%; } .filters label { flex: 1 1 100%; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav class="nav" aria-label="Sections">
+    <a class="wordmark" href="#top">100 apps, agent-ready?</a>
+    <ul><li><a href="#findings">Findings</a></li><li><a href="#apps">The 100 apps</a></li><li><a href="#agent">The agent</a></li><li><a href="#proof">Proof of accuracy</a></li></ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <h1>Two in three apps are agent-ready today.</h1>
+      <p class="lead">An agent read {{N}} apps’ developer docs; we checked its work.</p>
+      <div class="actions"><a class="btn btn--primary" href="#findings">Read the findings</a><a class="btn" href="#proof">See how we checked</a></div>
+    </div>
+    <div class="sheet" aria-labelledby="ledger-head">
+      <div class="sheet-head"><span id="ledger-head">Verdict for {{N}} apps</span><span>Docs read 24 Nov 2026</span></div>
+      <ol class="ledger">
+        <li class="hit"><div><b>Build now</b><span>Self-serve keys and a usable API or MCP</span></div><span class="num">{{READY}}</span></li>
+        <li><div><b>Build with effort</b><span>Paid plan, app review or other friction first</span></div><span class="num">{{FRICTION}}</span></li>
+        <li><div><b>Needs outreach</b><span>Customers or partners only; we must ask</span></div><span class="num">{{BLOCKED}}</span></li>
+      </ol>
+      <p class="caption">Accuracy on a hand-checked holdout sample: {{B3}} ({{B3N}} fields).</p>
+    </div>
+  </header>
+</div>
+
+<main>
+<div class="container">
+  <section aria-labelledby="terms-h">
+    <h2 id="terms-h">Five words, in plain English</h2>
+    <p class="lead">Everything on this page answers one question: can our AI agent safely use this app on a customer’s behalf?</p>
+    <dl class="terms">
+      <div><dt>Auth</dt><dd>How the app checks who is calling. An <i>API key</i> is a password for software; <i>OAuth</i> is the “Log in with…” screen where a user clicks Allow.</dd></div>
+      <div><dt>Self-serve</dt><dd>A developer can sign up and get keys alone, free or on a trial. The opposite is “gated”: pay, apply, or talk to sales first.</dd></div>
+      <div><dt>API</dt><dd>The documented doorway software uses to read and change data in the app. REST and GraphQL are the two common styles.</dd></div>
+      <div><dt>MCP</dt><dd>Model Context Protocol: a plug that lets an AI assistant use an app’s tools directly. A vendor MCP is one the app maker publishes.</dd></div>
+      <div><dt>Toolkit</dt><dd>The set of actions our agent can take inside an app, such as “create a contact” or “send a message”.</dd></div>
+    </dl>
+  </section>
+
+  <section id="findings" aria-labelledby="find-h">
+    <h2 id="find-h">What the 100 apps have in common</h2>
+    <p class="lead">The patterns, plainly stated. Every number comes from the final table below.</p>
+    <ol class="findings">
+      <li><span class="num">{{READY}}/{{N}}</span><h3>Most apps are an easy win.</h3><p>{{READY}} can be built today with keys anyone can get. {{FRICTION}} need effort first and only {{BLOCKED}} need a conversation with the vendor. {{SELFSERVE}} of {{N}} let a developer start without paying.</p></li>
+      <li><span class="num">{{TWO_COVER}}/{{N}}</span><h3>Two sign-in styles cover almost everything.</h3><p>API keys or tokens appear in {{KEY_N}} apps, OAuth in {{OAUTH_N}}, and {{BOTH_N}} offer both. Support those two and {{TWO_COVER}} apps are covered; the rest use Basic login or need no keys at all. REST is the norm; only {{GRAPHQL}} use GraphQL.</p></li>
+      <li><span class="num">{{MCP_OFF}}/{{N}}</span><h3>MCP went from rare to normal.</h3><p>{{MCP_OFF}} apps now publish their own MCP. Our first pass, written from AI memory, said {{MCP_P1}}. MCP was the most common mistake: {{MCP_FIX}} of the {{CORR_N}} corrections. Lesson: never trust memory for fast-moving facts.</p></li>
+      <li><span class="num">{{DEV_READY}}/10</span><h3>The gate follows money and trust, not technology.</h3><p>Developer tools ({{DEV_READY}}/10) and productivity apps ({{PM_READY}}/10) are open. Finance is the most closed: {{FIN_BLOCKED}} of 10 serve only their own customers. In ads, {{ADS_APPROVAL}} of 10 make you pass an app review before touching real accounts.</p></li>
+      <li><span class="num">{{TOP_BLOCKER_N}}/{{NOT_READY}}</span><h3>The most common blocker is {{TOP_BLOCKER}}.</h3><p>Of the {{NOT_READY}} apps that are not instantly buildable, {{TOP_BLOCKER_N}} need {{TOP_BLOCKER}}. That is a budget question, not an engineering one; see the split below.</p></li>
+    </ol>
+
+    <h3 class="mt">Verdict by category, best to worst</h3>
+    <ul class="bars">{{BARS}}</ul>
+    <p class="key"><span class="k-ready">Build now</span><span class="k-friction">Build with effort</span><span class="k-blocked">Needs outreach</span></p>
+  </section>
+
+  <section aria-labelledby="wins-h">
+    <h2 id="wins-h">Where to start, and who to call</h2>
+    <div class="split">
+      <div>
+        <h3>Start the paperwork this week</h3>
+        <p>These work, but a review, verification or approval takes days to weeks. Apply now so it is ready when engineering is: {{APPLY_NOW}}.</p>
+        <h3>Needs outreach to the vendor</h3>
+        <p>No self-serve path; credentials come through a sales or partner team: {{OUTREACH}}.</p>
+      </div>
+      <div>
+        <h3>Why the {{NOT_READY}} non-ready apps are held back</h3>
+        <table><thead><tr><th scope="col">Main blocker</th><th scope="col" class="num">Apps</th></tr></thead><tbody>{{BLK_ROWS}}</tbody></table>
+        <p class="caption">Every other app ({{READY}}) is self-serve with a documented API or MCP and can be built today.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps" aria-labelledby="apps-h">
+    <h2 id="apps-h">The 100 apps, one row each</h2>
+    <p class="lead">Filter by category or verdict. Every row links the docs page the answer came from, says how many of its claims the agent saw on that page, and lists any field a human corrected.</p>
+    <div class="sheet">
+      <div class="filters" role="search">
+        <label>Category<select id="f-cat"><option value="">All categories</option>{{CAT_OPTS}}</select></label>
+        <label>Verdict<select id="f-ver"><option value="">All verdicts</option><option value="ready">Build now</option><option value="friction">Build with effort</option><option value="blocked">Needs outreach</option></select></label>
+        <label>Search<input id="f-q" type="search" placeholder="App name or what it does"></label>
+        <span id="count" aria-live="polite">{{N}} apps shown</span>
+      </div>
+      <div class="scroll scroll--tall" tabindex="0" aria-label="Table of 100 apps, scrolls inside the box">
+        <table class="big-table">
+          <thead><tr><th scope="col" class="num">#</th><th scope="col">App and what it does</th><th scope="col">Category</th><th scope="col">How it signs in (auth)</th><th scope="col">Can a developer get keys alone?</th><th scope="col">API style and breadth</th><th scope="col">MCP</th><th scope="col">Verdict</th><th scope="col">Main blocker</th><th scope="col">Evidence</th></tr></thead>
+          <tbody id="rows">{{ROWS}}</tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="agent" class="band--ink" aria-labelledby="agent-h">
+  <div class="container">
+    <h2 id="agent-h">The agent that did the reading</h2>
+    <p class="lead">A Python pipeline in this repo, run once per app, in parallel. It does not guess; it checks each claim against the live page and keeps the sentence that proves it.</p>
+    <ol class="steps">
+      <li><span class="num">Step 1</span><h3>Draft from memory</h3><p>An AI model fills in all 100 rows from what it already knows. Fast, but unproven: this is pass 1.</p></li>
+      <li><span class="num">Step 2</span><h3>Fetch the docs</h3><p>Downloads each docs page. If a site blocks it or only renders with JavaScript, a headless Chrome browser opens it instead.</p></li>
+      <li><span class="num">Step 3</span><h3>Follow the trail</h3><p>Opens up to two linked pages about auth, pricing or getting started, plus the site’s llms.txt index where one exists.</p></li>
+      <li><span class="num">Step 4</span><h3>Look for proof</h3><p>Scans the text for OAuth, API keys, Basic login, GraphQL, MCP, “contact sales”, “free trial” and similar, and saves the sentence it found.</p></li>
+      <li><span class="num">Step 5</span><h3>Ask the MCP registry</h3><p>Queries the official MCP Registry for a server published under the vendor’s own name.</p></li>
+      <li><span class="num">Step 6</span><h3>Grade every claim</h3><p>Marks each claim confirmed, contradicted or no evidence. Contradictions go to a human review queue.</p></li>
+    </ol>
+    <div class="human">
+      <h3>Where a human was needed</h3>
+      <ul>
+        <li>Deciding each flagged contradiction. The agent’s flags were often noise: “approval” in an OAuth paragraph is not a sales gate, and a docs site’s own search MCP is not a product MCP.</li>
+        <li>Improving the agent three times (v1 to v3) after seeing its mistakes; each change is commented in the code.</li>
+        <li>Apps whose docs were blocked, empty or missing: PitchBook, Ecwid, Paygent, iPayX, fanbasis.</li>
+        <li>Judging “self-serve or gated”: pricing pages rarely say it in words a script can match, so this field is the one the agent confirms least.</li>
+      </ul>
+    </div>
+    <pre aria-label="Sample of the agent's evidence file"><b>data/evidence_final.json, one claim for Consensus</b>
+"mcp": { "status": "confirmed",
+  "evidence": "Bring Consensus into your AI assistant. Connect Claude, ChatGPT, Copilot and other MCP clients to the same search…" }
+<b>The full file holds every claim for all 100 apps, the pages read, and how each was fetched.</b></pre>
+  </div>
+</section>
+
+<div class="container">
+  <section id="proof" aria-labelledby="proof-h">
+    <h2 id="proof-h">How we know it is right</h2>
+    <p class="lead">We drew a sample of {{A_APPS}} apps, two per category, and checked four fields each by hand: sign-in, access, MCP and verdict. Then a fresh holdout of {{B_APPS}} apps nobody had looked at.</p>
+    <div class="acc">
+      <div><span class="num">{{A1}}</span><p>Pass 1, AI memory only. {{A1N}} fields right on the sample.</p></div>
+      <div><span class="num">{{A2}}</span><p>Pass 2, after the agent’s flags were reviewed. {{A2N}}.</p></div>
+      <div><span class="num">{{A3}}</span><p>Final on the same sample, {{A3N}}. Expected: its misses were fixed, so this alone proves little.</p></div>
+      <div class="hit"><span class="num">{{B3}}</span><p>Final on the untouched holdout, {{B3N}}. The honest number; with 40 fields it means likely above 92%.</p></div>
+    </div>
+
+    <div class="split">
+      <div>
+        <h3>Where pass 1 was wrong on the sample</h3>
+        <table><thead><tr><th scope="col">App</th><th scope="col">Wrong field</th><th scope="col">Pass 2</th><th scope="col">What the docs showed</th></tr></thead><tbody>{{MISS_ROWS}}</tbody></table>
+        <p class="caption">Excluded from the sample because no one could verify them from public pages: {{EXCLUDED}}. They are reported as unverified, not as right.</p>
+      </div>
+      <div>
+        <h3>How the agent itself improved</h3>
+        <table><thead><tr><th scope="col">Agent</th><th scope="col">Data</th><th scope="col" class="num">Claims seen</th><th scope="col" class="num">Share</th><th scope="col" class="num">Flags</th><th scope="col" class="num">Pages lost</th><th scope="col" class="num">Needed browser</th></tr></thead><tbody>{{RUN_ROWS}}</tbody></table>
+        <p class="caption">v2 fixed a bot-looking user agent that lost 9 sites, stopped matching “copperline” as Copper in the MCP registry, and read llms.txt. v3 ignored docs-search MCPs and started flagging “community only” MCP claims after the hand check found three vendor MCPs hiding there.</p>
+        <h3>What still defeats it, honestly</h3>
+        <ul class="limits">
+          <li>About a fifth of claims have no matching sentence on the pages read. Absence of proof is not proof of absence, so those rows carry a lower confidence.</li>
+          <li>The access field is the weakest: words like “enterprise” appear on almost every pricing page.</li>
+          <li>The hand checks were done by the AI reviewer reading the saved evidence; a person should re-check the rows marked low confidence before relying on them.</li>
+        </ul>
+      </div>
+    </div>
+
+    <details>
+      <summary>All {{CORR_N}} corrections the review made, across {{CORR_APPS}} apps</summary>
+      <div class="scroll"><table><thead><tr><th scope="col">App</th><th scope="col">Field</th><th scope="col">New value</th><th scope="col">Why</th></tr></thead><tbody>{{FIX_ROWS}}</tbody></table></div>
+    </details>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="container split">
+    <div>
+      <h3>Run it yourself</h3>
+      <p><code>python3 agent/research.py data/pass2_final.csv final</code> re-reads every docs page and writes <code>data/evidence_final.json</code>. <code>python3 build.py</code> rebuilds this page from the data. Needs Python 3 with requests and beautifulsoup4; Chrome is optional, for blocked pages.</p>
+    </div>
+    <div>
+      <h3>For agents reading this page</h3>
+      <p>The full dataset is embedded below as JSON (<code>#dataset</code>) and lives in <code>data/pass2_final.csv</code>. Evidence for each claim: <code>data/evidence_final.json</code>. Every correction: <code>data/corrections.csv</code>. The hand check: <code>data/hand_check.csv</code>.</p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/json" id="dataset">{{MACHINE}}</script>
+<script>
+(() => {
+  const cat = document.getElementById('f-cat'), ver = document.getElementById('f-ver'), q = document.getElementById('f-q'), count = document.getElementById('count');
+  const rows = [...document.querySelectorAll('#rows tr')];
+  const apply = () => {
+    const c = cat.value, v = ver.value, s = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const r of rows) {
+      const ok = (!c || r.dataset.cat === c) && (!v || r.dataset.verdict === v) && (!s || r.dataset.text.includes(s));
+      r.hidden = !ok; shown += ok;
+    }
+    count.textContent = shown + (shown === 1 ? ' app shown' : ' apps shown');
+  };
+  [cat, ver].forEach((el) => el.addEventListener('change', apply));
+  q.addEventListener('input', apply);
+})();
+</script>
+</body>
+</html>
